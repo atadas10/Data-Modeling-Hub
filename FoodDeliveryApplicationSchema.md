@@ -1,36 +1,36 @@
 # Food Delivery Application Data Model
 
-## 1. Use Case
+## 1. Use Case:
 
 The data model is designed for a food delivery application, facilitating the efficient management of orders, delivery agents, customers, incentives, restaurants, menus, and payment methods.
 
-### Functionality Overview
-
-#### 1. Incentive Management
+   ### Functionality Overview
+   
+   #### 1. Incentive Management
    - **Feature:** Provide incentives for delivery agents based on order count and effective dates.
-
-#### 2. Driver Performance Tracking
+   
+   #### 2. Driver Performance Tracking
    - **Feature:** Track and analyze the performance of delivery agents, including their current location, status, and delivery count.
-
-#### 3. Customer Information
+   
+   #### 3. Customer Information
    - **Feature:** Store detailed customer information for profiling and targeted promotions.
-
-#### 4. Restaurant and Menu Management
+   
+   #### 4. Restaurant and Menu Management
    - **Feature:** Manage restaurant details and menus, ensuring menu items are associated with their respective restaurants.
-
-#### 5. Payment Method and Discounts
+   
+   #### 5. Payment Method and Discounts
    - **Feature:** Centralize information about payment methods and associated discounts, supporting flexible payment options and discount strategies.
-
-#### 6. Order Tracking and Status
+   
+   #### 6. Order Tracking and Status
    - **Feature:** Capture essential information about orders, including timestamps for order placement, pickup, and delivery. Track order status.
-
-#### 7. Timestamps and Durations
+   
+   #### 7. Timestamps and Durations
    - **Feature:** Enable analysis of order processing times through timestamps and duration information.
-
-#### 8. Rating System
+   
+   #### 8. Rating System
    - **Feature:** Implement a rating system for agents and restaurants, facilitating feedback.
 
-### 2. Schema Details
+## 2. Schema Details
  - ### 2.1 `dim_agent`
    Stores information about delivery agents, including their name, address, base location, and rating.
 
@@ -180,4 +180,4 @@ The data model is designed for a food delivery application, facilitating the eff
 
 ## 5. Conclusion
 
-The designed data model provides a comprehensive structure for managing various aspects of a food delivery application. It incorporates detailed information about agents, customers, incentives, restaurants, menus, and payment methods. The separation of delivery-specific details in `dim_delivery_agent` and the inclusion of incentive-related tables enhance the model's flexibility and analytical capabilities. The foreign key relationships ensure data integrity and support efficient querying and analysis.
+   The designed data model provides a comprehensive structure for managing various aspects of a food delivery application. It incorporates detailed information about agents, customers, incentives, restaurants, menus, and payment methods. The separation of delivery-specific details in `dim_delivery_agent` and the inclusion of incentive-related tables enhance the model's flexibility and analytical capabilities. The foreign key relationships ensure data integrity and support efficient querying and analysis.
