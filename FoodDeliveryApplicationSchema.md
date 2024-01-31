@@ -6,28 +6,28 @@ The data model is designed for a food delivery application, facilitating the eff
 
    ### Functionality Overview
    
-   #### 1. Incentive Management
+   #### 1.1 Incentive Management
    - **Feature:** Provide incentives for delivery agents based on order count and effective dates.
    
-   #### 2. Driver Performance Tracking
+   #### 1.2. Driver Performance Tracking
    - **Feature:** Track and analyze the performance of delivery agents, including their current location, status, and delivery count.
    
-   #### 3. Customer Information
+   #### 1.3. Customer Information
    - **Feature:** Store detailed customer information for profiling and targeted promotions.
    
-   #### 4. Restaurant and Menu Management
+   #### 1.4. Restaurant and Menu Management
    - **Feature:** Manage restaurant details and menus, ensuring menu items are associated with their respective restaurants.
    
-   #### 5. Payment Method and Discounts
+   #### 1.5. Payment Method and Discounts
    - **Feature:** Centralize information about payment methods and associated discounts, supporting flexible payment options and discount strategies.
    
-   #### 6. Order Tracking and Status
+   #### 1.6. Order Tracking and Status
    - **Feature:** Capture essential information about orders, including timestamps for order placement, pickup, and delivery. Track order status.
    
-   #### 7. Timestamps and Durations
+   #### 1.7. Timestamps and Durations
    - **Feature:** Enable analysis of order processing times through timestamps and duration information.
    
-   #### 8. Rating System
+   #### 1.8. Rating System
    - **Feature:** Implement a rating system for agents and restaurants, facilitating feedback.
 
 ## 2. Schema Details
