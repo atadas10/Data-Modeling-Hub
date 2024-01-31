@@ -31,6 +31,40 @@ The data model is designed for a food delivery application, facilitating the eff
    - **Feature:** Implement a rating system for agents and restaurants, facilitating feedback.
 
 ## 2. Schema Details
+We are going to use start-schema approach to build the solution here. First, let us understand the area of the models as below:
+- agent
+- customer
+- order
+- incentive, payment method etc
+
+To build the conceptual model out of these subject areas, we have to identify the high level relationship between them.
+For simplicity, we'll consider a one-to-many relationship between Customer and Order, and a one-to-many relationship between Agent and Order. Incentive and PaymentMethod will be independent entities.
+
+Here's a textual representation of the conceptual data model:
+
+           +---------------+
+           |     Agent     |
+           +---------------+
+           | agent_id (PK) |
+           | name          |
+           | location      |
+           +---------------+
+                  |
+                  |
+           +------+----------------+
+           |                       |
+      +------------------+  +------------------+
+      |     Customer     |  |       Order      |
+      +------------------+  +------------------+
+      | customer_id (PK) |  | order_id (PK)    |
+      | name             |  | order_date       |
+      | address          |  | amount           |
+      | phone_number     |  | status           |
+      +------------------+  | agent_id (FK)    |
+                            | customer_id (FK) |
+                            +------------------+
+
+Second steps is to define the entities in detail. Let's start with the process.
  - ### 2.1 `dim_agent`
    Stores information about delivery agents, including their name, address, base location, and rating.
 
