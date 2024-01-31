@@ -1,7 +1,7 @@
-# Welcome to Data Modelling
+# Welcome to Data Modeling
 
-## 1. What is Data Modelling or Data Models
-  Data modeling is like creating a blueprint for organizing and structuring data in a way that makes sense for a specific purpose. It involves defining how data is stored, accessed, and related to other pieces of information. Imagine it as designing the framework for a database, where you plan what types of data will be stored, how they're connected, and the rules for ensuring data accuracy. This helps in better understanding and managing information, making it a crucial step in building effective databases and data systems.
+## 1. What is Data Modeling or Data Models
+Data modeling is like creating a blueprint for organizing and structuring data in a way that makes sense for a specific purpose. It involves defining how data is stored, accessed, and related to other pieces of information. Imagine it as designing the framework for a database, where you plan what types of data will be stored, how they're connected, and the rules for ensuring data accuracy. This helps in better understanding and managing information, making it a crucial step in building effective databases and data systems.
   
 ## 2. Design Steps:
    #### Step 2.1: Define Objectives
