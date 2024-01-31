@@ -182,4 +182,4 @@
   - Facilitates collaboration among stakeholders involved in the data modeling process.
 
 # 5. Sample Data Models
-  Feel free to explore the sample data models to gain hands-on experience and further understand the principles of data modeling.
+  Feel free to explore the sample data models [here](Sample_Data_Models.md) to gain hands-on experience and further understand the principles of data modeling.
