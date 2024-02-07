@@ -1,11 +1,11 @@
 # Table of Contents
 
-1. [Introduction to Star Schema Modeling](#introduction-to-star-schema-modeling)   
-2. [Components of a Star Schema](#components-of-a-star-schema)
-3. [Advantages of Star Schema Modeling](#advantages-of-star-schema-modeling)
-4. [Best Practices for Implementing Star Schema](#best-practices-for-implementing-star-schema)
-5. [Use Cases and Applications](#use-cases-and-applications)
-6. [Conclusion](#conclusion)
+1. [Introduction to Star Schema Modeling](#1-introduction-to-star-schema-modeling)   
+2. [Components of a Star Schema](#2-components-of-a-star-schema)
+3. [Advantages of Star Schema Modeling](#3-advantages-of-star-schema-modeling)
+4. [Best Practices for Implementing Star Schema](#4-best-practices-for-implementing-star-schema)
+5. [Use Cases and Applications](#5-use-cases-and-applications)
+6. [Conclusion](#6-conclusion)
 
 # 1. Introduction to Star Schema Modeling
 
