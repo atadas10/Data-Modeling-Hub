@@ -82,7 +82,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 
   Data models are representations that help organize and structure data. Different types of data models include:
 
-  ### 4.1. [**Flat or Star Schema**](start-schema.md)
+  ### 4.1. [**Flat or Star Schema**](star-schema.md)
   
   **Description:**
   The **flat or star schema** is a simple and commonly used data model in databases. In this model, data is organized into tables, and a central fact table is connected to dimension tables. The fact table contains numerical measures, and dimension tables provide descriptive information.
@@ -205,6 +205,6 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   Feel free to explore the sample data models [here](Sample_Data_Models.md) to gain hands-on experience and further understand the principles of data modeling.
 
 ## Next Read:
-  1. [Start schema](start-schema.md)
+  1. [Star schema](star-schema.md)
   2. [Snowflake Schema](snowflake-schema.md)
   3. [Data Vault 2.0](Data-Vault.md)
