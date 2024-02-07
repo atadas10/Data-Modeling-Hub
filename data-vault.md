@@ -68,5 +68,5 @@ Data Vault 2.0 offers a modern and efficient approach to data modeling, enabling
 1. [Schema design using Data Vault 2.0](hotel_reservation_app.md)
 
 ### Also Read:
- 1. [Start schema](start-schema.md)
- 2. [Snowflake Schema](snowflake-schema.md)
+ 1. [Star schema](star-schema.md)
+ 2. [Snowflake schema](snowflake-schema.md)
