@@ -98,7 +98,7 @@ The denormalized structure of star schemas enhances query performance, as it min
 ## 3.3. Flexibility
 Star schemas offer flexibility in accommodating changing business requirements and analytical needs. They can easily incorporate new dimensions or measures without significant modifications to the existing schema.
 
-# Best Practices for Implementing Star Schema
+# 4. Best Practices for Implementing Star Schema
 
 ## 4.1. Dimensional Modeling Techniques
 Adopt dimensional modeling best practices to design dimension tables effectively, ensuring they capture the relevant attributes and hierarchies needed for analysis.
@@ -109,7 +109,7 @@ Strike a balance between normalization and denormalization to optimize storage e
 ## 4.3. Indexing and Partitioning
 Implement indexing and partitioning strategies to further enhance query performance and manage data storage effectively, especially for large-scale star schemas.
 
-# Use Cases and Applications
+# 5. Use Cases and Applications
 
 ## 5.1. Data Warehousing
 Star schemas are widely used in data warehousing environments to support efficient data retrieval and analysis for reporting, dashboarding, and decision-making purposes.
@@ -126,6 +126,6 @@ Star schema modeling offers a straightforward and effective approach to organizi
 
 
 ## Next Read:
-  1. [Start schema design example](FoodDeliveryApplicationSchema.md)
+  1. [Star schema design example](FoodDeliveryApplicationSchema.md)
   2. [Snowflake Schema](snowflake-schema.md)
   3. [Data Vault 2.0](Data-Vault.md)
