@@ -73,7 +73,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 
   Data models are representations that help organize and structure data. Different types of data models include:
 
-  ### 4.1. **Flat or Star Schema**
+  ### 4.1. [**Flat or Star Schema**](start-schema.md)
   
   **Description:**
   The **flat or star schema** is a simple and commonly used data model in databases. In this model, data is organized into tables, and a central fact table is connected to dimension tables. The fact table contains numerical measures, and dimension tables provide descriptive information.
@@ -83,7 +83,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - Easy to understand and implement.
   - Suitable for scenarios with a single level of relationships.
   
-  ### 4.2. **Snowflake Schema**
+  ### 4.2. [**Snowflake Schema**](snowflake-schema.md)
   
   **Description:**
   The **snowflake schema** is an extension of the star schema, where dimension tables are normalized into multiple related tables. This normalization reduces redundancy by breaking down dimension tables into sub-dimensions.
@@ -92,8 +92,19 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - More normalized structure compared to the star schema.
   - Reduces redundancy but may require more complex queries.
   - Suitable for scenarios where data integrity is crucial.
+
+  ### 4.3. [**Data Vault 2.0**](data-vault.md)
+  **Description:**
+  Data Vault 2.0 is a data modeling methodology designed for enterprise data warehouses that emphasizes scalability, flexibility, and auditability. In this model, data is organized into three main types of tables: Hubs, Links, and Satellites. Hubs contain unique business keys, Links connect Hubs to represent relationships, and Satellites store historical and descriptive attributes.
+
+  **Key Features:**
+  - Scalable architecture accommodating changing business requirements.
+  - Flexibility to integrate disparate data sources and handle evolving data structures.
+  - Auditability through the tracking of data lineage and history.
+  - Separation of concerns between business keys, relationships, and descriptive attributes.
+  - Enhanced data governance and compliance capabilities.
   
-  ### 4.3. **Hierarchical Model**
+  ### 4.4. **Hierarchical Model**
   
   **Description:**
   The **hierarchical model** organizes data in a tree-like structure, where each record has a parent-child relationship. This model is useful for representing one-to-many relationships.
@@ -103,7 +114,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - Suitable for scenarios where data has a natural hierarchical order.
   - Limited flexibility compared to more modern models.
   
-  ### 4.4. **Relational Model**
+  ### 4.5. **Relational Model**
   
   **Description:**
   The **relational model** is based on the principles of relational algebra. It organizes data into tables with rows and columns, and relationships between tables are established using keys.
@@ -113,7 +124,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - Follows the principles of normalization.
   - Commonly used in relational database management systems (RDBMS).
   
-  ### 4.5. **NoSQL Models**
+  ### 4.6. **NoSQL Models**
   
   **Description:**
   NoSQL databases use various models, such as document-oriented, key-value, wide-column store, or graph databases. These models provide flexibility in handling diverse data types and structures.
