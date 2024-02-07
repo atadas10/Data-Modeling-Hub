@@ -63,5 +63,10 @@ Data Vault 2.0 facilitates advanced analytics and data science projects by provi
 
 Data Vault 2.0 offers a modern and efficient approach to data modeling, enabling organizations to build scalable, flexible, and auditable data warehouses that support a wide range of business intelligence and analytics initiatives. By following best practices and leveraging its key principles, organizations can unlock the full potential of their data assets and drive innovation and growth.
 
-## Sample model design
-Click [here](hotel_reservation_app.md) for view the schema design example using Data Vault 2.0 approach.
+
+### Next Read:
+1. [Schema design using Data Vault 2.0](hotel_reservation_app.md)
+
+### Also Read:
+ 1. [Start schema](start-schema.md)
+ 2. [Snowflake Schema](snowflake-schema.md)
