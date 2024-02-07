@@ -23,3 +23,9 @@ In a snowflake schema, dimension tables are normalized, which means that redunda
 Consider a "Product" dimension in a snowflake schema, where the dimension attributes are normalized into multiple tables. The main "Product" table may contain core attributes such as ProductID, ProductName, and CategoryID. The "Category" table stores additional information about product categories, such as CategoryID and CategoryName. Similarly, the "Brand" table contains details about product brands, such as BrandID and BrandName. Each of these tables is related through foreign key relationships, creating a snowflake-like structure.
 
 ![data-modeling-snowflake](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/f26cc82b-1553-48da-ae76-7f88a6b88250)
+
+#
+## Next Read:
+  1. [Introduction to data modeling](README.md)
+  2. [Star schema design example](FoodDeliveryApplicationSchema.md)
+  3. [Data Vault 2.0](Data-Vault.md)
