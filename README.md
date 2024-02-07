@@ -1,53 +1,62 @@
 # Welcome to Data Modeling
 
+# Table of Contents
+
+1. [What is Data Modeling or Data Models](#1-what-is-data-modeling-or-data-models)   
+2. [Design Steps](#2-design-steps)
+3. [Data Modeling Steps](#3-data-modeling-steps)
+4. [Types of Data Models](#4-types-of-data-models)
+5. [Additional Considerations](#5-additional-considerations-for-understanding-data-modeling)
+
+
 ## 1. What is Data Modeling or Data Models
 Data modeling is like creating a blueprint for organizing and structuring data in a way that makes sense for a specific purpose. It involves defining how data is stored, accessed, and related to other pieces of information. Imagine it as designing the framework for a database, where you plan what types of data will be stored, how they're connected, and the rules for ensuring data accuracy. This helps in better understanding and managing information, making it a crucial step in building effective databases and data systems.
   
 ## 2. Design Steps:
-   #### Step 2.1: Define Objectives
+   #### Step 2.1. Define Objectives
    Clearly define the objectives of your data modeling project. Understand what insights or solutions you aim to derive from the data.
    
-   #### Step 2.2: Identify Entities
+   #### Step 2.2. Identify Entities
    
    Identify the main entities relevant to your objectives. These could be people, objects, or concepts that play a crucial role in your data.
    
-   #### Step 2.3: Define Relationships
+   #### Step 2.3. Define Relationships
    
    Determine how the identified entities are related to each other. Establish relationships that reflect the connections between entities.
    
-   ### Step 2.4: Normalize Data
+   ### Step 2.4. Normalize Data
    
    Normalize the data to reduce redundancy and improve data integrity. Organize it into logical tables, ensuring each table serves a specific purpose.
    
-   ### Step 2.5: Choose Data Types
+   ### Step 2.5. Choose Data Types
    
    Assign appropriate data types to each attribute in your tables. This step ensures efficient storage and processing of data.
    
-   ### Step 2.6: Establish Keys
+   ### Step 2.6. Establish Keys
    
    Define primary and foreign keys to establish relationships between tables. This is crucial for maintaining data integrity.
    
-   ### Step 2.7: Validate Model
+   ### Step 2.7. Validate Model
    
    Validate your data model against the defined objectives. Ensure it accurately represents the real-world scenario and aligns with business requirements.
    
-   ### Step 2.8: Iterate and Refine
+   ### Step 2.8. Iterate and Refine
    
    Iterate through the model, refining it based on feedback and evolving requirements. Data modeling is an iterative process.
    
-   ### Step 2.9: Document Model
+   ### Step 2.9. Document Model
    
    Document your data model comprehensively. Include details about entities, relationships, keys, and any assumptions made during the modeling process.
    
-   ### Step 2.10: Implement Model
+   ### Step 2.10. Implement Model
    
    Implement your data model in the chosen database system. Create tables, relationships, and ensure the model aligns with the physical storage requirements.
    
-   ### Step 2.11: Test and Validate
+   ### Step 2.11. Test and Validate
    
    Test the implemented data model with sample data to validate its functionality. Ensure it meets the intended objectives and produces accurate results.
    
-   ### Step 2.12: Maintain and Evolve
+   ### Step 2.12. Maintain and Evolve
    
    Regularly maintain and update your data model to accommodate changes in requirements or business processes. Data modeling is an ongoing process of refinement.
 
@@ -194,3 +203,8 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 
 # 5. Sample Data Models
   Feel free to explore the sample data models [here](Sample_Data_Models.md) to gain hands-on experience and further understand the principles of data modeling.
+
+## Next Read:
+  1. [Start schema](start-schema.md)
+  2. [Snowflake Schema](snowflake-schema.md)
+  3. [Data Vault 2.0](Data-Vault.md)
