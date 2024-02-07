@@ -9,7 +9,7 @@
 
 # 1. Introduction to Star Schema Modeling
 
-## 1.1 What is a Star Schema?
+## 1.1. What is a Star Schema?
 A star schema is a popular data modeling technique used in data warehousing. It organizes data into a central "fact" table surrounded by "dimension" tables, resembling a star shape when viewed in a graphical representation.
 
 ![data-modeling (1)](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/2cb79054-ec10-4dcc-b692-a3b2ce0723df)
