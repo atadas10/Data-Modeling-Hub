@@ -125,6 +125,7 @@ Star schemas are compatible with OLAP tools and technologies, enabling interacti
 Star schema modeling offers a straightforward and effective approach to organizing data for analytical purposes. By leveraging its simplicity, query performance benefits, and flexibility, organizations can build robust data warehouses and support a wide range of business intelligence and analytics applications.
 
 
-# Next Read:
-  1. [Snowflake Schema](snowflake-schema.md)
-  2. [Data Vault 2.0](Data-Vault.md)
+## Next Read:
+  1. [Start schema design example](FoodDeliveryApplicationSchema.md)
+  2. [Snowflake Schema](snowflake-schema.md)
+  3. [Data Vault 2.0](Data-Vault.md)
