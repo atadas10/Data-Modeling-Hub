@@ -175,7 +175,8 @@ Second steps is to define the entities in detail. Let's start with the process.
 
 ## 3. Relationships
 
-   ![image](https://github.com/atadas10/DataModelling/assets/84840069/cc717c00-94b1-47e0-9caf-7432f40e1299)
+   ![Food Delivery System](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/a49d9d9e-3392-4480-a44f-ddff4ddc5398)
+
 
 ## 4. Implementation Details
    The functionalities are achieved through the following components of the data model:
