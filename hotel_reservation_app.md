@@ -89,7 +89,7 @@ Final steps is to define all the entities in detail and create the relationship 
     | email     | Text      | Email address of the user. |
     | password  | Text      | Encrypted password of the user. |
   
-  #### 2.2.2 User Satellite
+  #### 2.2.2 User Details Satellite
   - Description: Contains additional details about users.
   
   | Name          | Data Type | Description  |
@@ -110,7 +110,7 @@ Final steps is to define all the entities in detail and create the relationship 
   | location   | Text      | Location of the hotel. |
   | rating     | Numeric   | Rating of the hotel. |
   
-  #### 2.2.4 Hotel Satellite
+  #### 2.2.4 Hotel Details Satellite
   - Description: Contains additional details about hotels.
   
   | Name          | Data Type | Description  |
@@ -129,7 +129,7 @@ Final steps is to define all the entities in detail and create the relationship 
   | type       | Text      | Type of the room. |
   | price      | Numeric   | Price of the room. |
   
-  #### 2.2.6 Room Satellite
+  #### 2.2.6 Room Details Satellite
   - Description: Contains additional details about rooms.
   
   | Name          | Data Type | Description  |
@@ -147,7 +147,7 @@ Final steps is to define all the entities in detail and create the relationship 
   | method       | Text      | Payment method used. |
   | status       | Text      | Status of the payment (e.g., paid, pending). |
   
-  #### 2.2.8 Payment Satellite
+  #### 2.2.8 Payment Details Satellite
   - Description: Contains additional details about payments.
   
   | Name          | Data Type | Description  |
@@ -203,7 +203,7 @@ Final steps is to define all the entities in detail and create the relationship 
   | status        | Text      | Status of the support interaction (e.g., open, closed). |
   | timestamp     | DateTime  | Timestamp of the support interaction. |
   
-  #### 2.2.13 Customer Support Satellite
+  #### 2.2.13 Customer Support Details Satellite
   - Description: Contains additional details about customer support interactions.
   
   | Name          | Data Type | Description  |
@@ -213,3 +213,47 @@ Final steps is to define all the entities in detail and create the relationship 
   | resolution    | Text      | Resolution provided for the support issue. |
   | resolved_by   | Text      | User who resolved the support issue. |
   | timestamp     | DateTime  | Timestamp of the support interaction. |
+
+# 3. Relationships
+
+  ![Hotel Reservation](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/05870cbc-33ce-4cf6-b5f0-dac47739054d)
+
+# 4. Implementation Details:
+
+#### 4.1 User Registration & Login:
+- **User Registration**: Information is inserted into the User Hub table upon registration.
+- **User Login**: Credentials are verified against data in the User Hub table.
+
+#### 4.2 Search & Filter:
+- **Search**: Hotels are queried based on criteria from the Hotel Hub and Hotel Satellite tables.
+- **Filter**: Additional filtering options are applied using SQL WHERE clauses.
+
+#### 4.3 Booking Management:
+- **View Reservations**: Query the Reservation Link table joined with the User Hub and Hotel Hub tables.
+- **Modify Reservations**: Update reservation rows in the Reservation Satellite table.
+- **Cancel Reservations**: Delete reservation rows from the Reservation Satellite table.
+
+#### 4.4 Room Availability:
+- **Real-time Availability**: Query the Room Hub and Reservation Satellite tables for room availability.
+
+#### 4.5 Reviews & Ratings:
+- **Submit Review**: Insert rows into the Review Satellite table, referencing relevant tables.
+- **View Reviews**: Query the Review Satellite table joined with other relevant tables.
+
+#### 4.6 Payment Integration:
+- **Initiate Payment**: Insert payment details into the Payment Hub and Payment Satellite tables.
+- **Transaction Processing**: Process payments and update status in the Payment Satellite table.
+
+#### 4.7 Notifications:
+- **Send Notifications**: Insert notification data into the Notification Satellite table.
+- **Receive Notifications**: Query the Notification Satellite table for user notifications.
+
+#### 4.8 Customer Support:
+- **Submit Support Requests**: Insert support requests into the Customer Support Hub and Satellite tables.
+- **Resolve Support Requests**: Update support request status and details in the Customer Support Satellite table.
+
+# 5. Conclusion
+  Functionalities in the hotel reservation app are achieved by interacting with the database tables using SQL queries and operations. This database-driven approach ensures efficient management of hotel reservations and related activities.
+
+##
+> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)
