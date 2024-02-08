@@ -25,3 +25,7 @@ Welcome to the Sample Data Models repository! Below are links to sample data mod
 - **Functionality Overview:**
   - Designed for health insurance applications, this model includes features for policy management, claims processing, and member information tracking.
   - [Link to Implementation Details](health_insurance.md#implementation-details)
+
+
+##
+> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)

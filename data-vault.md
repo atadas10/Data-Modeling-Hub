@@ -70,3 +70,7 @@ Data Vault 2.0 offers a modern and efficient approach to data modeling, enabling
 ### Also Read:
  1. [Star schema](star-schema.md)
  2. [Snowflake schema](snowflake-schema.md)
+
+
+##
+> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)
