@@ -28,7 +28,7 @@ Consider a "Product" dimension in a snowflake schema, where the dimension attrib
 ## Next Read:
   1. [Introduction to data modeling](README.md)
   2. [Star schema design example](FoodDeliveryApplicationSchema.md)
-  3. [Data Vault 2.0](Data-Vault.md)
+  3. [Data Vault 2.0](data-vault.md)
 
 
 ##
