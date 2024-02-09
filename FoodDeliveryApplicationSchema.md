@@ -175,7 +175,8 @@ Second steps is to define the entities in detail. Let's start with the process.
 
 ## 3. Relationships
 
-   ![image](https://github.com/atadas10/DataModelling/assets/84840069/cc717c00-94b1-47e0-9caf-7432f40e1299)
+   ![Food Delivery System](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/a49d9d9e-3392-4480-a44f-ddff4ddc5398)
+
 
 ## 4. Implementation Details
    The functionalities are achieved through the following components of the data model:
@@ -215,3 +216,7 @@ Second steps is to define the entities in detail. Let's start with the process.
 ## 5. Conclusion
 
    The designed data model provides a comprehensive structure for managing various aspects of a food delivery application. It incorporates detailed information about agents, customers, incentives, restaurants, menus, and payment methods. The separation of delivery-specific details in `dim_delivery_agent` and the inclusion of incentive-related tables enhance the model's flexibility and analytical capabilities. The foreign key relationships ensure data integrity and support efficient querying and analysis.
+
+
+##
+> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)
