@@ -256,4 +256,4 @@ Final steps is to define all the entities in detail and create the relationship 
   Functionalities in the hotel reservation app are achieved by interacting with the database tables using SQL queries and operations. This database-driven approach ensures efficient management of hotel reservations and related activities.
 
 ##
-> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)
+> © 2024 [atanuconsulting.in](https://www.atanuconsulting.in "Atanu Consulting")  | [LinkedIn](https://www.linkedin.com/in/dasatanu10 "LinkedIn Page") | [email](mailto:atanu10.yt@gmail.com "Send mail")
