@@ -219,4 +219,4 @@ Second steps is to define the entities in detail. Let's start with the process.
 
 
 ##
-> © 2024 [atanuconsulting.in](www.atanuconsulting.in)  | [LinkedIn](www.linkedin.com/in/dasatanu10) | [email](mailto:atanu10.yt@gmail.com)
+> © 2024 [atanuconsulting.in](https://www.atanuconsulting.in "Atanu Consulting")  | [LinkedIn](https://www.linkedin.com/in/dasatanu10 "LinkedIn Page") | [email](mailto:atanu10.yt@gmail.com "Send mail")
