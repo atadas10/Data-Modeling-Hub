@@ -128,7 +128,7 @@ Star schema modeling offers a straightforward and effective approach to organizi
 ## Next Read:
   1. [Star schema design example](FoodDeliveryApplicationSchema.md)
   2. [Snowflake Schema](snowflake-schema.md)
-  3. [Data Vault 2.0](Data-Vault.md)
+  3. [Data Vault 2.0](data-vault.md)
 
 
 ##
