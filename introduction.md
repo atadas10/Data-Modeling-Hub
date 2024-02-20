@@ -209,7 +209,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 ## Next Read:
   1. [Star schema](star-schema.md)
   2. [Snowflake Schema](snowflake-schema.md)
-  3. [Data Vault 2.0](Data-Vault.md)
+  3. [Data Vault 2.0](data-vault.md)
   4. [Schema Design Examples](Sample_Data_Models.md)
 
 
