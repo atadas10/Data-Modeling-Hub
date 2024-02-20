@@ -7,6 +7,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 </head>
 <body>
+    <div id="navigation">
+        <!-- Table of contents will be loaded here -->
+    </div>
     <div id="content">
         <!-- Content of README.md will be loaded here -->
     </div>
@@ -35,8 +38,24 @@
             });
         }
 
-        // Load README.md content by default when the page loads
-        window.onload = function() {
+        // Function to generate table of contents
+        async function generateTableOfContents(content) {
+            const regex = /^#+\s+(.*)$/gm;
+            let matches;
+            const tableOfContents = [];
+            while ((matches = regex.exec(content)) !== null) {
+                const heading = matches[1];
+                const anchor = heading.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                tableOfContents.push(`<a href="#${anchor}">${heading}</a>`);
+            }
+            document.getElementById('navigation').innerHTML = tableOfContents.join('<br>');
+        }
+
+        // Load table of contents and README.md content by default when the page loads
+        window.onload = async function() {
+            const response = await fetch('README.md');
+            const text = await response.text();
+            await generateTableOfContents(text);
             loadMarkdownFile('README.md');
         };
     </script>
