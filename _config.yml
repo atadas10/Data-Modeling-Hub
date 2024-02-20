@@ -14,5 +14,5 @@ minimal: false             # use a dark header
 
 navigation:
   - {title: Mail, icon: envelope, url: "mailto:atanu10.yt@gmail.com"}
-  - {title: Website, icon: web: "https://www.atanuconsulting.in/"}
+  - {title: Website, icon: web, url: "https://www.atanuconsulting.in/"}
   - {title: Feed, icon: rss, url: "/feed.xml"}
