@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Data Modeling Hub</title>
-</head>
-<body>
-
 # Welcome to the Data Modeling Hub
 
 ## About
@@ -39,7 +32,6 @@ Ready to dive into the world of data modeling? Check out our <a href="tutorials/
   5. [Schema Design Examples](Sample_Data_Models.md)
 
 
-</body>
-</html>
+
 
 > © 2024 [atanuconsulting.in](https://www.atanuconsulting.in "Atanu Consulting")  | [LinkedIn](https://www.linkedin.com/in/dasatanu10 "LinkedIn Page") | [email](mailto:atanu10.yt@gmail.com "Send mail")
