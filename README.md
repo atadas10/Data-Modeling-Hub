@@ -213,6 +213,5 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   4. [Schema Design Examples](Sample_Data_Models.md)
 
 
-
 #
 > © 2024 [atanuconsulting.in](https://www.atanuconsulting.in "Atanu Consulting")  | [LinkedIn](https://www.linkedin.com/in/dasatanu10 "LinkedIn Page") | [email](mailto:atanu10.yt@gmail.com "Send mail")
