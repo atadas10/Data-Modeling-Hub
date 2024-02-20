@@ -1,4 +1,29 @@
----
-layout: default
-title: "Welcome to Data Modeling"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages</title>
+</head>
+<body>
+    <div id="content">
+        <!-- Content of README.md will be loaded here -->
+    </div>
+
+    <script>
+        // Function to load Markdown file content into the webpage
+        async function loadMarkdownFile(filename) {
+            const response = await fetch(filename);
+            const text = await response.text();
+            document.getElementById('content').innerHTML = text;
+        }
+
+        // Load README.md content by default when the page loads
+        window.onload = function() {
+            loadMarkdownFile('README.md');
+        };
+    </script>
+
+    <p><a href="introduction.md">Link to Introduction</a></p>
+</body>
+</html>
