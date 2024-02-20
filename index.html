@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Pages</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
 </head>
 <body>
     <div id="content">
@@ -15,7 +16,9 @@
         async function loadMarkdownFile(filename) {
             const response = await fetch(filename);
             const text = await response.text();
-            document.getElementById('content').innerHTML = text;
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(text);
+            document.getElementById('content').innerHTML = html;
         }
 
         // Load README.md content by default when the page loads
