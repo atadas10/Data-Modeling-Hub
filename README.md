@@ -1,5 +1,4 @@
 # Welcome to the Data Modeling Hub
-
 ## About
 
 Welcome to the Data Modeling Hub, a space dedicated to helping individuals learn and master the art of data modeling. Whether you're a beginner looking to understand the basics or an experienced professional seeking advanced techniques, you've come to the right place.
