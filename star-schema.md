@@ -23,37 +23,37 @@ Star schemas are characterized by their simplicity and ease of understanding. Th
 
   Dimension tables provide context to the data stored in the fact table by describing the attributes or dimensions associated with the measures. These attributes are often descriptive and hierarchical, facilitating drill-down and roll-up analysis.
 
-  ### Types of Dimension Tables
+  <h3> Types of Dimension Tables </h3>
   
-  #### 2.1.1. Conformed Dimension Tables
+  <h4> 2.1.1. Conformed Dimension Tables </h4>
   
   Conformed dimension tables are dimension tables that have the same meaning and content when referred to from different fact tables in the same data warehouse or across different data warehouses in the organization. They provide consistency in reporting and analysis across multiple business processes.
   
   Example:
   Consider the dim_date dimension table containing attributes such as DateID, DayOfWeek, Month, Quarter, and Year. This dimension table can be conformed across multiple fact tables, such as Sales, Inventory, and Customer Satisfaction, ensuring consistent reporting of sales, inventory levels, and customer satisfaction metrics over time.
   
-  #### 2.1.2. Junk Dimension Tables
+  <h4> 2.1.2. Junk Dimension Tables </h4>
   
   Junk dimension tables are small dimension tables that contain attributes that are not related to any particular dimension but are necessary for the data model's integrity. These attributes are typically flags or indicators.
   
   Example:
   The dim_promotion dimension table contain attributes like PromotionID, PromotionType, and PromotionDescription. In addition to these promotion-related attributes, it may also include flags indicating whether a promotion was active or expired, or whether it applied to specific product categories. These additional flags are considered "junk" attributes.
   
-  #### 2.1.3. Degenerate Dimension Tables
+  <h4> 2.1.3. Degenerate Dimension Tables </h4>
   
   Degenerate dimension tables are dimension tables that contain attributes that are derived from the fact table itself and do not have a corresponding dimension table. These attributes are usually surrogate keys or identifiers.
   
   Example:
   In a sales fact table, each record may contain a unique sale_id that serves as a key to identify the transaction. Since these identifiers do not have associated descriptive attributes, they are considered degenerate dimensions.
   
-  #### 2.1.4. Slowly Changing Dimensions (SCD)
+  <h4> 2.1.4. Slowly Changing Dimensions (SCD) </h4>
   
   Slowly Changing Dimensions (SCD) represent dimension tables where the attributes may change over time, and historical values need to be preserved. There are different types of SCDs, including Type 1, Type 2, and Type 3, each handling changes to dimension attributes differently.
   
   Example:
   Consider a "Customer" dimension table where the customer's address may change over time. In a Type 1 SCD, the new address simply overwrites the old one. In a Type 2 SCD, a new record is inserted for the customer with the updated address, preserving the history of changes. In a Type 3 SCD, additional columns are added to track both the current and previous addresses.
   
-  #### 2.1.5. Role-Playing Dimensions
+  <h4> 2.1.5. Role-Playing Dimensions </h4>
   
   Role-playing dimensions are dimension tables that are used multiple times within the same fact table, but each instance represents a different role or perspective. These dimensions are often used to represent dates at different granularities or viewpoints.
   
@@ -64,23 +64,23 @@ Star schemas are characterized by their simplicity and ease of understanding. Th
 ## 2.1. Fact Tables
 Fact tables contain quantitative data, also known as measures, and are typically surrounded by dimension tables. They serve as the central repository for business facts or events and enable analysts to perform aggregate functions such as sum, average, and count.
 
-  ### Types of Fact Tables
+  <h3> Types of Fact Tables </h3>
   
-  #### 2.1.1. Transactional Fact Tables
+  <h4> 2.1.1. Transactional Fact Tables </h4>
   
   Transactional fact tables store detailed, atomic-level data representing individual business transactions or events. They are typically large and contain granular data, allowing analysts to drill down into specific details.
   
   Example:
   A "Sales" fact table in a retail environment may contain records for each sale transaction, including information such as ProductID, CustomerID, Quantity Sold, Unit Price, and Total Sales Amount.
   
-  #### 2.1.2. Periodic Snapshot Fact Tables
+  <h4> 2.1.2. Periodic Snapshot Fact Tables </h4>
   
   Periodic snapshot fact tables capture data at regular intervals or snapshots, providing a snapshot of a particular point in time. They are useful for tracking changes over time and analyzing trends.
   
   Example:
   A "Inventory Snapshot" fact table
   
-  #### 2.1.3. Accumulating Snapshot Fact Tables
+  <h4> 2.1.3. Accumulating Snapshot Fact Tables </h4>
   
   Accumulating snapshot fact tables track the state or progression of a process or workflow over time, capturing key milestones or events. They provide a comprehensive view of the entire process lifecycle and are often used for performance monitoring and optimization.
   
@@ -131,5 +131,6 @@ Star schema modeling offers a straightforward and effective approach to organizi
   3. [Data Vault 2.0](Data-Vault.md)
 
 
-##
+
+#
 > © 2024 [atanuconsulting.in](https://www.atanuconsulting.in "Atanu Consulting")  | [LinkedIn](https://www.linkedin.com/in/dasatanu10 "LinkedIn Page") | [email](mailto:atanu10.yt@gmail.com "Send mail")
