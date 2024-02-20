@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="markdown-body">
+        <!-- Content of README.md will be loaded here -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script>
+        // Function to load README.md content into the webpage
+        async function loadReadme() {
+            const response = await fetch('README.md');
+            const text = await response.text();
+            const converter = new showdown.Converter();
+            const html = converter.makeHtml(text);
+            document.querySelector('.markdown-body').innerHTML = html;
+        }
+
+        // Call the function to load README.md content when the page loads
+        window.onload = loadReadme;
+    </script>
+</body>
+</html>
