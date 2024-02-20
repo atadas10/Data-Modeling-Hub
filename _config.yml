@@ -1,0 +1,18 @@
+title: "Learn Data Modeling"
+author: "Atanu Das"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+mathjax: true
+
+# Layout
+
+show_excerpts: true        # show article excerpts on the home page
+show_frame: true           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
+
+navigation:
+  - {title: Mail, icon: envelope, url: "mailto:atanu10.yt@gmail.com"}
+  - {title: Website, icon: web: "https://www.atanuconsulting.in/"}
+  - {title: Feed, icon: rss, url: "/feed.xml"}
