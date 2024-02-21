@@ -1,6 +1,6 @@
-# Welcome to Data Modeling
+## Introduction to Data Modeling
 
-# Table of Contents
+## Table of Contents
 
 1. [What is Data Modeling or Data Models](#1-what-is-data-modeling-or-data-models)   
 2. [Design Steps](#2-design-steps)
