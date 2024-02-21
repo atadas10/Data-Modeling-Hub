@@ -28,7 +28,7 @@ Ready to dive into the world of data modeling? Check out our <a href="tutorials/
   1. [Introduction to data modeling](introduction.md)
   2. [Star schema](star-schema.md)
   3. [Snowflake Schema](snowflake-schema.md)
-  4. [Data Vault 2.0](Data-Vault.md)
+  4. [Data Vault 2.0](data-vault.md)
   5. [Schema Design Examples](Sample_Data_Models.md)
 
 
