@@ -18,7 +18,7 @@ The data model is designed for a food delivery application, facilitating the eff
    
    - **Feature:** Store detailed customer information for profiling and targeted promotions.
    
-   <h3> 1.4. Restaurant and Menu Management
+   <h3> 1.4. Restaurant and Menu Management </h3>
    
    - **Feature:** Manage restaurant details and menus, ensuring menu items are associated with their respective restaurants.
    
@@ -39,6 +39,7 @@ The data model is designed for a food delivery application, facilitating the eff
    - **Feature:** Implement a rating system for agents and restaurants, facilitating feedback.
 
 ## 2. Schema Details
+
 We are going to use start-schema approach to build the solution here. First, let us understand the area of the models as below:
 	- agent
 	- customer
@@ -77,17 +78,63 @@ Second steps is to define the entities in detail. Let's start with the process.
  
    Stores information about delivery agents, including their name, address, base location, and rating.
 
-   | Column Name      | Data Type | Description                                |
-   | ---------------- | --------- | ------------------------------------------ |
-   | agent_id         | number    | Primary Key                                |
-   | name             | varchar   | Agent's name                               |
-   | address_1        | varchar   | Address line 1                             |
-   | address_2        | varchar   | Address line 2                             |
-   | city             | varchar   | City                                       |
-   | state            | varchar   | State                                      |
-   | pincode          | varchar   | Pincode                                    |
-   | base_location    | varchar   | Base location of the agent                 |
-   | rating           | decimal   | Rating of the agent                        |
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Column Name</th>
+	      <th>Data Type</th>
+	      <th>Description</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>agent_id</td>
+	      <td>number</td>
+	      <td>Primary Key</td>
+	    </tr>
+	    <tr>
+	      <td>name</td>
+	      <td>varchar</td>
+	      <td>Agent's name</td>
+	    </tr>
+	    <tr>
+	      <td>address_1</td>
+	      <td>varchar</td>
+	      <td>Address line 1</td>
+	    </tr>
+	    <tr>
+	      <td>address_2</td>
+	      <td>varchar</td>
+	      <td>Address line 2</td>
+	    </tr>
+	    <tr>
+	      <td>city</td>
+	      <td>varchar</td>
+	      <td>City</td>
+	    </tr>
+	    <tr>
+	      <td>state</td>
+	      <td>varchar</td>
+	      <td>State</td>
+	    </tr>
+	    <tr>
+	      <td>pincode</td>
+	      <td>varchar</td>
+	      <td>Pincode</td>
+	    </tr>
+	    <tr>
+	      <td>base_location</td>
+	      <td>varchar</td>
+	      <td>Base location of the agent</td>
+	    </tr>
+	    <tr>
+	      <td>rating</td>
+	      <td>decimal</td>
+	      <td>Rating of the agent</td>
+	    </tr>
+	  </tbody>
+	</table>
+
 
  - <h3> 2.2 dim_delivery_agent </h3>
  
