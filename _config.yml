@@ -1,9 +1,6 @@
-title: "Learn Data Modeling"
+title: "Data Modeling Hub"
 author: "Atanu Das"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-mathjax: true
+theme: minima
 
 # Layout
 
