@@ -1,7 +1,7 @@
 title: Data Modeling Hub
 author:
   name: Atanu Das
-  email: www.atanuconsulting.com
+  web: www.atanuconsulting.com
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -26,7 +26,7 @@ remote_theme: jekyll/minima
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - introduction.md
+  - topic.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
@@ -51,6 +51,6 @@ minima:
   # Generate social links in footer.
   social_links:
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/dasatanu10/" }
-  #  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+    - { platform: facebook,       user_url: "https://www.facebook.com/dasatanu10/" }
     - { platform: github,         user_url: "https://github.com/atadas10" }
-  #  - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/atanudas_srt" }
