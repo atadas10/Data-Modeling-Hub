@@ -78,67 +78,22 @@ Second steps is to define the entities in detail. Let's start with the process.
  
    Stores information about delivery agents, including their name, address, base location, and rating.
 
-	<table>
-	  <thead>
-	    <tr>
-	      <th>Column Name</th>
-	      <th>Data Type</th>
-	      <th>Description</th>
-	    </tr>
-	  </thead>
-	  <tbody>
-	    <tr>
-	      <td>agent_id</td>
-	      <td>number</td>
-	      <td>Primary Key</td>
-	    </tr>
-	    <tr>
-	      <td>name</td>
-	      <td>varchar</td>
-	      <td>Agent's name</td>
-	    </tr>
-	    <tr>
-	      <td>address_1</td>
-	      <td>varchar</td>
-	      <td>Address line 1</td>
-	    </tr>
-	    <tr>
-	      <td>address_2</td>
-	      <td>varchar</td>
-	      <td>Address line 2</td>
-	    </tr>
-	    <tr>
-	      <td>city</td>
-	      <td>varchar</td>
-	      <td>City</td>
-	    </tr>
-	    <tr>
-	      <td>state</td>
-	      <td>varchar</td>
-	      <td>State</td>
-	    </tr>
-	    <tr>
-	      <td>pincode</td>
-	      <td>varchar</td>
-	      <td>Pincode</td>
-	    </tr>
-	    <tr>
-	      <td>base_location</td>
-	      <td>varchar</td>
-	      <td>Base location of the agent</td>
-	    </tr>
-	    <tr>
-	      <td>rating</td>
-	      <td>decimal</td>
-	      <td>Rating of the agent</td>
-	    </tr>
-	  </tbody>
-	</table>
-
+   | Column Name      | Data Type | Description                                |
+   | ---------------- | --------- | ------------------------------------------ |
+   | agent_id         | number    | Primary Key                                |
+   | name             | varchar   | Agent's name                               |
+   | address_1        | varchar   | Address line 1                             |
+   | address_2        | varchar   | Address line 2                             |
+   | city             | varchar   | City                                       |
+   | state            | varchar   | State                                      |
+   | pincode          | varchar   | Pincode                                    |
+   | base_location    | varchar   | Base location of the agent                 |
+   | rating           | decimal   | Rating of the agent                        |
 
  - <h3> 2.2 dim_delivery_agent </h3>
  
-   Tracks the status and performance of delivery agents, including their current location, delivery count, and overall    status.
+   Tracks the status and performance of delivery agents, including their current location, delivery count, and overall status.
+   
    | Column Name      | Data Type | Description                                |
    | ---------------- | --------- | ------------------------------------------ |
    | delivery_agent_id| number    | Primary Key                                |
@@ -188,6 +143,7 @@ Second steps is to define the entities in detail. Let's start with the process.
  - <h3> 2.6 dim_restaurant </h3>
  
    Stores information about restaurants, including their name, location, contact details, and rating.
+   
    | Column Name      | Data Type | Description                                |
    | ---------------- | --------- | ------------------------------------------ |
    | restaurant_id    | number    | Primary Key                                |
