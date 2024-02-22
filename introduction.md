@@ -83,6 +83,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   Data models are representations that help organize and structure data. Different types of data models include:
 
   <h3> 4.1. <a href="star-schema.md">Flat or Star Schema</a> </h3>
+  ### 4.1. [Flat or Star Schema](star-schema.md)
   
   **Description:**
   The **flat or star schema** is a simple and commonly used data model in databases. In this model, data is organized into tables, and a central fact table is connected to dimension tables. The fact table contains numerical measures, and dimension tables provide descriptive information.
@@ -93,6 +94,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - Suitable for scenarios with a single level of relationships.
   
   <h3> 4.2. <a href="snowflake-schema.md">Snowflake Schema</a> </h3>
+  ### 4.2. [Snowflake Schema](snowflake-schema.md)
   
   **Description:**
   The **snowflake schema** is an extension of the star schema, where dimension tables are normalized into multiple related tables. This normalization reduces redundancy by breaking down dimension tables into sub-dimensions.
@@ -103,6 +105,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
   - Suitable for scenarios where data integrity is crucial.
 
   <h3> 4.3. <a href="data-vault.md">Data Vault 2.0 Schema</a> </h3>
+  ### 4.3. [Data Vault 2.0 Schema](data-vault.md)
   
   **Description:**
   Data Vault 2.0 is a data modeling methodology designed for enterprise data warehouses that emphasizes scalability, flexibility, and auditability. In this model, data is organized into three main types of tables: Hubs, Links, and Satellites. Hubs contain unique business keys, Links connect Hubs to represent relationships, and Satellites store historical and descriptive attributes.
