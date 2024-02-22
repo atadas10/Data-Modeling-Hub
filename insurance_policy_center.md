@@ -3,5 +3,5 @@
 </h1>
 
 <h3 align="center">
-  visit www.atanuconsulting.in for a sneak peek and discover more exciting projects. 🌟 </strong>
+  visit <a href="https://www.atanuconsulting.in">www.atanuconsulting.in</a> for a sneak peek and discover more exciting projects. 🌟
 </h3>
