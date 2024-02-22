@@ -1,12 +1,17 @@
 # Chapters
 
-# Chapters
+## Introduction
+- [Introduction to Data Modeling](introduction.md)
 
-# This is h1
-<h1> This is h1</h1>
+## Schema Types
+- [Snowflake Schema](snowflake-schema.md)
+- [Star Schema](star-schema.md)
+- [Data Vault 2.0](data_vault.md)
 
-## This is h2
-<h2> This is h2 </h2>
+## Schema Designs
+- [Schema Design for Food Delivery App using Star Schema Approach](FoodDeliveryApplicationSchema.md)
+- [Schema Design for Hotel Reservation System using Data Vault 2.0 Approach](hotel_reservation_app.md)
+- [Insurance Policy Center Schema](insurance_policy_center.md)
 
-### This is h3
-<h3> This is h3 </h3>
+## Sample Data Models
+- [Sample Data Models](Sample_Data_Models.md)
