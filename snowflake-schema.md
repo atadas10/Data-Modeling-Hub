@@ -1,10 +1,10 @@
 ## Table of Contents
 
-	1. [What is Snowflake Schema?](#what-is-snowflake-schema)
-	2. [Characteristics and Structure](#characteristics-and-structure)
-	3. [Advantages](#advantages)
-	4. [Disadvantages](#disadvantages)
-	5. [Example](#example)
+1. [What is Snowflake Schema?](#1-what-is-snowflake-schema)
+2. [Characteristics and Structure](#2-characteristics-and-structure)
+3. [Advantages](#3-advantages)
+4. [Disadvantages](#4-disadvantages)
+5. [Example](#5-example)
 
 
 ## 1. What is Snowflake Schema?
