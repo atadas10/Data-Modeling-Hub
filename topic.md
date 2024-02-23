@@ -5,6 +5,7 @@
 
 ## Design Steps
 - [Normalization](normalization.md)
+  
 ## Schema Types
 - [Snowflake Schema](snowflake-schema.md)
 - [Star Schema](star-schema.md)
