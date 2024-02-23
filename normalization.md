@@ -133,6 +133,7 @@ Here's the dataset in 2NF:
 To convert the dataset into the third normal form (3NF), **we need to eliminate transitive dependencies**. This involves further decomposing the tables to ensure that non-key attributes do not depend on other non-key attributes within the same table.
 
 In the provided customer dataset, the "CustomerCity" column is functionally dependent on CustomerID but not on the entire primary key (CustomerID). This introduces a transitive dependency into the dataset while keeping the tables in the second normal form (2NF).
+To resolve this, we need to separate CustomerCity into its own table.
 To break it down:
 - Create a new table for Customer information, including CustomerID and CustomerName.
 - Create another table for City information, including CityID and CustomerCity.
@@ -158,7 +159,73 @@ To break it down:
 | 4      | Houston      |
 | 5      | Miami        |
 
+
 <h3> 8.4. BCNF: </h3>
+
+To ensure that the tables are in Boyce-Codd Normal Form (BCNF), we need to make sure that every determinant (attribute determining another attribute) is a candidate key. In other words, every non-trivial functional dependency in the table must be determined by a candidate key.
+In the Customers table, both CustomerID and CityID are candidate keys, as they uniquely identify each row. However, CustomerName is not a candidate key, but it determines CityID. This means that there is a functional dependency (CustomerName -> CityID) where the determinant (CustomerName) is not a superkey. 
+To bring the table into BCNF, we need to split the table to eliminate this dependency.Here's how we can achieve BCNF:
+
+- **Customers Table:**
+
+  | CustomerID | CustomerName |
+  |------------|--------------|
+  | 101        | John Doe     |
+  | 102        | Jane Smith   |
+  | 103        | Alice Brown  |
+  | 104        | Bob Johnson  |
+  | 105        | Emily Davis  |
+
+- **Cities Table:**
+
+  | CityID | CustomerCity |
+  |--------|--------------|
+  | 1      | New York     |
+  | 2      | Los Angeles  |
+  | 3      | Chicago      |
+  | 4      | Houston      |
+  | 5      | Miami        |
+
+  - **CustomerCities Table:**
+ 
+  | CustomerID | CityID |
+  |------------|--------|
+  | 101        | 1      |
+  | 102        | 2      |
+  | 103        | 3      |
+  | 104        | 4      |
+  | 105        | 5      |
+
+
+<h3> 8.5. 4-NF: </h3>
+
+To achieve the Fourth Normal Form (4NF), we need to ensure that there are **no multi-valued dependencies in the tables**. This means that each non-prime attribute (attributes not part of any candidate key) should be fully functionally dependent on the primary key.
+Let's consider a new requirement where a customer can have multiple email addresses associated with them. This introduces a multi-valued dependency between CustomerID and EmailAddress.
+Here's how we can modify the tables to accommodate this scenario:
+
+- ** Customers Table: **
+
+| CustomerID | CustomerName |
+|------------|--------------|
+| 101        | John Doe     |
+| 102        | Jane Smith   |
+| 103        | Alice Brown  |
+| 104        | Bob Johnson  |
+| 105        | Emily Davis  |
+
+- ** Emails Table: **
+
+| CustomerID | EmailAddress     |
+|------------|------------------|
+| 101        | john@example.com |
+| 101        | johndoe@gmail.com |
+| 102        | jane@example.com |
+| 103        | alice@example.com |
+| 105        | emily@example.com |
+
+In this structure, the Emails table has a composite primary key consisting of both CustomerID and EmailAddress, ensuring uniqueness. This removes the multi-valued dependency and brings the tables into the Fourth Normal Form (4NF).
+
+<h3> 8.5. 4-NF: </h3>
 
 ## 9. Conclusion
 Normalization is a fundamental principle in database design, fostering data integrity, efficiency, and scalability. By adhering to the normalization process and understanding the nuances of each normal form, database architects can craft robust and optimized data models that serve as the backbone of modern applications.
