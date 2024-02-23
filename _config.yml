@@ -32,6 +32,7 @@ header_pages:
 #show_excerpts: false
 
 plugins:
+   - jekyll-feed
    - jekyll-seo-tag
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
