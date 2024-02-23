@@ -26,7 +26,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
    
    <h3> Step 2.4. Normalize Data </h3>
    
-   Normalize the data to reduce redundancy and improve data integrity. Organize it into logical tables, ensuring each table serves a specific purpose.
+   [Normalize](normalization.md) the data to reduce redundancy and improve data integrity. Organize it into logical tables, ensuring each table serves a specific purpose.
    
    <h3> Step 2.5. Choose Data Types </h3>
    
