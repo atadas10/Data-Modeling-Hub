@@ -76,6 +76,7 @@ We are going to use Data-Vault 2.0 approach to build the solution here. First, l
     | phone_number   | 
     +----------------+              
 
+
 Final steps is to define all the entities in detail and create the relationship between them. Let's start with the process.
 
 - <h3> 2.2 Table Details </h3>

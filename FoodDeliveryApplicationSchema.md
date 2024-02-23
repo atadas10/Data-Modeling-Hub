@@ -18,7 +18,7 @@ The data model is designed for a food delivery application, facilitating the eff
    
    - **Feature:** Store detailed customer information for profiling and targeted promotions.
    
-   <h3> 1.4. Restaurant and Menu Management
+   <h3> 1.4. Restaurant and Menu Management </h3>
    
    - **Feature:** Manage restaurant details and menus, ensuring menu items are associated with their respective restaurants.
    
@@ -39,6 +39,7 @@ The data model is designed for a food delivery application, facilitating the eff
    - **Feature:** Implement a rating system for agents and restaurants, facilitating feedback.
 
 ## 2. Schema Details
+
 We are going to use start-schema approach to build the solution here. First, let us understand the area of the models as below:
 	- agent
 	- customer
@@ -91,7 +92,8 @@ Second steps is to define the entities in detail. Let's start with the process.
 
  - <h3> 2.2 dim_delivery_agent </h3>
  
-   Tracks the status and performance of delivery agents, including their current location, delivery count, and overall    status.
+   Tracks the status and performance of delivery agents, including their current location, delivery count, and overall status.
+   
    | Column Name      | Data Type | Description                                |
    | ---------------- | --------- | ------------------------------------------ |
    | delivery_agent_id| number    | Primary Key                                |
@@ -141,6 +143,7 @@ Second steps is to define the entities in detail. Let's start with the process.
  - <h3> 2.6 dim_restaurant </h3>
  
    Stores information about restaurants, including their name, location, contact details, and rating.
+   
    | Column Name      | Data Type | Description                                |
    | ---------------- | --------- | ------------------------------------------ |
    | restaurant_id    | number    | Primary Key                                |

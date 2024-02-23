@@ -1,6 +1,6 @@
-# Welcome to Data Modeling
+## Introduction to Data Modeling
 
-# Table of Contents
+## Table of Contents
 
 1. [What is Data Modeling or Data Models](#1-what-is-data-modeling-or-data-models)   
 2. [Design Steps](#2-design-steps)
@@ -82,30 +82,30 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 
   Data models are representations that help organize and structure data. Different types of data models include:
 
-  <h3> 4.1. <a href="star-schema.md">Flat or Star Schema</a> </h3>
+  <h3> 4.1. Flat or Star Schema </h3>
   
   **Description:**
-  The **flat or star schema** is a simple and commonly used data model in databases. In this model, data is organized into tables, and a central fact table is connected to dimension tables. The fact table contains numerical measures, and dimension tables provide descriptive information.
+  The [**flat or star schema**](star-schema.md) is a simple and commonly used data model in databases. In this model, data is organized into tables, and a central fact table is connected to dimension tables. The fact table contains numerical measures, and dimension tables provide descriptive information.
   
   **Key Features:**
   - Simple structure with a central fact table.
   - Easy to understand and implement.
   - Suitable for scenarios with a single level of relationships.
   
-  <h3> 4.2. <a href="snowflake-schema.md">Snowflake Schema</a> </h3>
+  <h3> 4.2. Snowflake Schema </h3>
   
   **Description:**
-  The **snowflake schema** is an extension of the star schema, where dimension tables are normalized into multiple related tables. This normalization reduces redundancy by breaking down dimension tables into sub-dimensions.
+  The [**snowflake schema**](snowflake-schema.md) is an extension of the star schema, where dimension tables are normalized into multiple related tables. This normalization reduces redundancy by breaking down dimension tables into sub-dimensions.
   
   **Key Features:**
   - More normalized structure compared to the star schema.
   - Reduces redundancy but may require more complex queries.
   - Suitable for scenarios where data integrity is crucial.
 
-  <h3> 4.3. <a href="data-vault.md">Data Vault 2.0 Schema</a> </h3>
+  <h3> 4.3. Data Vault 2.0 Schema </h3>
   
   **Description:**
-  Data Vault 2.0 is a data modeling methodology designed for enterprise data warehouses that emphasizes scalability, flexibility, and auditability. In this model, data is organized into three main types of tables: Hubs, Links, and Satellites. Hubs contain unique business keys, Links connect Hubs to represent relationships, and Satellites store historical and descriptive attributes.
+  [**Data Vault 2.0**](data-vault.md) is a data modeling methodology designed for enterprise data warehouses that emphasizes scalability, flexibility, and auditability. In this model, data is organized into three main types of tables: Hubs, Links, and Satellites. Hubs contain unique business keys, Links connect Hubs to represent relationships, and Satellites store historical and descriptive attributes.
 
   **Key Features:**
   - Scalable architecture accommodating changing business requirements.
@@ -209,7 +209,7 @@ Data modeling is like creating a blueprint for organizing and structuring data i
 ## Next Read:
   1. [Star schema](star-schema.md)
   2. [Snowflake Schema](snowflake-schema.md)
-  3. [Data Vault 2.0](Data-Vault.md)
+  3. [Data Vault 2.0](data-vault.md)
   4. [Schema Design Examples](Sample_Data_Models.md)
 
 

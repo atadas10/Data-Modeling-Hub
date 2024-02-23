@@ -24,11 +24,11 @@ Data modeling is the process of creating a visual representation of data structu
 
 ## Get Started
 
-Ready to dive into the world of data modeling? Check out our <a href="tutorials/">Tutorials</a> section to begin your journey. Whether you're a beginner or an expert, there's something here for everyone.
+Ready to dive into the world of data modeling? Check out the following chapters to begin your journey. Whether you're a beginner or an expert, there's something here for everyone.
   1. [Introduction to data modeling](introduction.md)
   2. [Star schema](star-schema.md)
   3. [Snowflake Schema](snowflake-schema.md)
-  4. [Data Vault 2.0](Data-Vault.md)
+  4. [Data Vault 2.0](data-vault.md)
   5. [Schema Design Examples](Sample_Data_Models.md)
 
 
