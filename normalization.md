@@ -265,6 +265,9 @@ Here's how we can represent this scenario using 5NF:
 
 After all the normalization performed, the final data model looks like below:
 
+![guest-template (1)](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/18bdf381-8a25-49fe-91d8-77f9dcb3b570)
+
+
 ## 9. Conclusion
 Normalization is a fundamental principle in database design, fostering data integrity, efficiency, and scalability. By adhering to the normalization process and understanding the nuances of each normal form, database architects can craft robust and optimized data models that serve as the backbone of modern applications.
 
