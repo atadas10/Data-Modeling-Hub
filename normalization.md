@@ -1,15 +1,15 @@
 # Introduction to Normalization
 
 # Table of Contents
-1. [What is Normalization?](#what-is-normalization)
-2. [Purpose and Importance of Normalization](#purpose-and-importance-of-normalization)
-3. [Principles of Normalization](#principles-of-normalization)
-4. [Types of Normal Forms](#types-of-normal-forms)
-5. [Process of Normalization](#process-of-normalization)
-6. [Practical Considerations and Trade-offs](#practical-considerations-and-trade-offs)
-7. [Best Practices and Guidelines](#best-practices-and-guidelines)
-8. [Example Dataset Progression](#example-dataset-progression)
-9. [Conclusion](#conclusion)
+1. [What is Normalization?](#1-what-is-normalization)
+2. [Purpose and Importance of Normalization](#2-purpose-and-importance-of-normalization)
+3. [Principles of Normalization](#3-principles-of-normalization)
+4. [Types of Normal Forms](#4-types-of-normal-forms)
+5. [Process of Normalization](#5-process-of-normalization)
+6. [Practical Considerations and Trade-offs](#6-practical-considerations-and-trade-offs)
+7. [Best Practices and Guidelines](#7-best-practices-and-guidelines)
+8. [Example Dataset Progression](#8-example-dataset-progression)
+9. [Conclusion](#9-conclusion)
 
 
 ## 1. What is Normalization?
