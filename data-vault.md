@@ -1,11 +1,11 @@
 # Table of Contents
 
-	1. [Introduction to Data Vault 2.0 Modeling](#introduction-to-data-vault-20-modeling)
-	2. [Components of Data Vault 2.0](#components-of-data-vault-20)
-	3. [Advantages of Data Vault 2.0 Modeling](#advantages-of-data-vault-20-modeling)
-	4. [Best Practices for Implementing Data Vault 2.0](#best-practices-for-implementing-data-vault-20)
-	5. [Use Cases and Applications](#use-cases-and-applications)
-	6. [Conclusion](#conclusion)
+1. [Introduction to Data Vault 2.0 Modeling](#introduction-to-data-vault-20-modeling)
+2. [Components of Data Vault 2.0](#components-of-data-vault-20)
+3. [Advantages of Data Vault 2.0 Modeling](#advantages-of-data-vault-20-modeling)
+4. [Best Practices for Implementing Data Vault 2.0](#best-practices-for-implementing-data-vault-20)
+5. [Use Cases and Applications](#use-cases-and-applications)
+6. [Conclusion](#conclusion)
 
 
 # Introduction to Data Vault 2.0 Modeling
