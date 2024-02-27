@@ -8,7 +8,7 @@
 ## Schema Types
 - [Snowflake Schema](snowflake-schema.md)
 - [Star Schema](star-schema.md)
-- [Data-Vault 2.0](data_vault.md)
+- [Data Vault 2.0](data-vault.md)
 
 ## Schema Designs
 - [Schema Design for Food Delivery App using Star Schema Approach](FoodDeliveryApplicationSchema.md)
