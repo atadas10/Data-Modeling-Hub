@@ -1,14 +1,14 @@
 # Table of Contents
 
-1. [Introduction to Data Vault 2.0 Modeling](#introduction-to-data-vault-20-modeling)
-2. [Components of Data Vault 2.0](#components-of-data-vault-20)
-3. [Advantages of Data Vault 2.0 Modeling](#advantages-of-data-vault-20-modeling)
-4. [Best Practices for Implementing Data Vault 2.0](#best-practices-for-implementing-data-vault-20)
-5. [Use Cases and Applications](#use-cases-and-applications)
-6. [Conclusion](#conclusion)
+1. [Introduction to Data Vault 2.0 Modeling](#1-introduction-to-data-vault-20-modeling)
+2. [Components of Data Vault 2.0](#2-components-of-data-vault-20)
+3. [Advantages of Data Vault 2.0 Modeling](#3-advantages-of-data-vault-20-modeling)
+4. [Best Practices for Implementing Data Vault 2.0](#4-best-practices-for-implementing-data-vault-20)
+5. [Use Cases and Applications](#5-use-cases-and-applications)
+6. [Conclusion](#6-conclusion)
 
 
-# Introduction to Data Vault 2.0 Modeling
+# 1. Introduction to Data Vault 2.0 Modeling
 
 ## 1. What is Data Vault 2.0?
 Data Vault 2.0 is a modeling technique designed for building scalable and flexible data warehouses. It follows a hub-and-spoke architecture that separates business keys from descriptive attributes, providing a robust foundation for integrating disparate data sources.
