@@ -1,3 +1,4 @@
+# Introduction to Snowflake Schema
 ## Table of Contents
 
 1. [What is Snowflake Schema?](#1-what-is-snowflake-schema)
@@ -7,7 +8,7 @@
 5. [Example](#5-example)
 
 
-##1. What is Snowflake Schema?
+## 1. What is Snowflake Schema?
 
 Snowflake schema is another data modeling technique used in data warehousing, similar to the [star schema](star-schema.md). However, in a snowflake schema, dimension tables are normalized, meaning they are broken down into multiple related tables, creating a more complex structure resembling a snowflake rather than a star.
 
