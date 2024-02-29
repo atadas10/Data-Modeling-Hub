@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-logo" rel="author" href="https://www.atanuconsulting.in">
+    <a class="site-title" rel="author" href="https://www.atanuconsulting.in">
 	    <img src="{{ site.logo-img | relative_url }}" width="30px" height="Auto"/>
     </a>
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
@@ -46,6 +46,7 @@
         font-size: 30px;  /* Adjust the font size of the site title (24)*/
         color: #2e8b57  !important;
         font-weight: bold;
+        margin-right: 10px;
     }
 
     .site-header .page-link {
