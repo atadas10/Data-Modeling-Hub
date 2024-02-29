@@ -4,8 +4,8 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-	    <img src="{{ site.logo-img | relative_url }}" alt="{{ site.title | escape }}" />
+    <a class="site-title" rel="author" href="https://www.atanuconsulting.in">
+	    <img src="{{ site.logo-img | relative_url }}" />
 	    <span>{{ site.title | escape }}</span>
     </a>
 
