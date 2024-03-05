@@ -82,7 +82,7 @@ On Day-1, let's say customer John Doe moves to a new address "456 Elm St" and hi
 
   | CustomerID | Name     | Email               | Address      | PreviousAddress | StartDate | EndDate   | IsActive |
   |------------|----------|---------------------|--------------|-----------------|-----------|-----------|----------|
-  | 1          | John Doe | johndoe@example.com | 123 Main St  | 2024-01-01      | 2024-02-01| No       |
+  | 1          | John Doe | johndoe@example.com | 123 Main St  |                 | 2024-01-01| 2024-02-01| No       |
   | 1          | John Doe | john.d@example.com  | 456 Elm St   | 123 Main St     | 2024-02-02| 9999-12-31| Yes      |
 
 
