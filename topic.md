@@ -11,6 +11,9 @@
 - [Star Schema](star-schema.md)
 - [Data Vault 2.0](data-vault.md)
 
+## Table Types
+- [Slowly Changing Dimensions](scd-types.md)
+
 ## Schema Designs
 - [Schema Design for Food Delivery App using Star Schema Approach](FoodDeliveryApplicationSchema.md)
 - [Schema Design for Hotel Reservation System using Data Vault 2.0 Approach](hotel_reservation_app.md)
