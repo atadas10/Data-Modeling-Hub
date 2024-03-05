@@ -30,6 +30,9 @@ SCDs are categorized into several types, each handling changes in data different
 6. **Type 5 - Hybrid (Combination of Types 1 and 2)**: This type combines the features of Types 1 and 2, where a new record is added to the table for each change, but the old record is retained as well, effectively maintaining a full history while also updating the current state.
 7. **Type 6 - Hybrid (Combination of Types 1, 2, and 3)**: Sometimes referred to as the "Type 6 SCD", it combines aspects of Types 1, 2, and 3 to track changes, maintain a current view, and keep some history by having current and previous values in the same table along with a flag to indicate the latest record.
 
+![SCDs](https://github.com/atadas10/Learn-Data-Modeling/assets/84840069/a6c77319-90f4-45fe-9613-d2c5daaaf626)
+
+
 ## 3. Example & Use Case of SCDs
 
 Consider a retail business that tracks sales data. The business has a `Customers` dimension table that includes customer information such as `CustomerID`, `Name`, `Email`, and `Address`.
