@@ -48,7 +48,7 @@ Star schemas are characterized by their simplicity and ease of understanding. Th
   
   <h4> 2.1.4. Slowly Changing Dimensions (SCD) </h4>
   
-  Slowly Changing Dimensions (SCD) represent dimension tables where the attributes may change over time, and historical values need to be preserved. There are different types of SCDs, including Type 1, Type 2, and Type 3, each handling changes to dimension attributes differently.
+  [Slowly Changing Dimensions (SCD)](scd-types.md) represent dimension tables where the attributes may change over time, and historical values need to be preserved. There are different types of SCDs, including Type 1, Type 2, and Type 3, each handling changes to dimension attributes differently.
   
   Example:
   Consider a "Customer" dimension table where the customer's address may change over time. In a Type 1 SCD, the new address simply overwrites the old one. In a Type 2 SCD, a new record is inserted for the customer with the updated address, preserving the history of changes. In a Type 3 SCD, additional columns are added to track both the current and previous addresses.
