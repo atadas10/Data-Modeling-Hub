@@ -1,9 +1,9 @@
 
-## Use Case:
+## 1. Use Case:
 
 The auto insurance application sends automated renewal reminders to policyholders nearing their policy expiration date. When a policy is approaching renewal, the system retrieves policy details, including renewal date and coverage options. It then triggers personalized notifications via email or SMS, reminding the policyholder to renew their policy before expiration. The reminder includes information on premium payment options and any available discounts for early renewal. Upon receiving the reminder, the policyholder can review their coverage needs and conveniently renew their policy online through the application. This feature ensures timely policy renewals, reduces lapse risks, and enhances customer satisfaction.
 
-### Functionality
+### 2. Functionality
 1. Policy Management: Store and manage details of insurance policies including policyholder information, coverage details, premium payments, and policy terms.
 2. Claims Processing: Track and process insurance claims filed by policyholders, including claim details, status updates, and settlement information.
 3. Customer Management: Maintain customer profiles with contact information, policy history, and communication preferences.
@@ -14,8 +14,8 @@ The auto insurance application sends automated renewal reminders to policyholder
 7. Document Management: Store and organize policy documents, contracts, and communication records for easy access and retrieval.
 These functionalities will help streamline operations, enhance customer service, and improve decision-making within the auto insurance application.
 
-## Conceptual Model:
-### Entities:
+## 3. Conceptual Model:
+### 3.1. Entities:
 
 - **Policyholder**
   - *Attributes:* Name, Address, Contact Info, etc.
@@ -56,95 +56,129 @@ These functionalities will help streamline operations, enhance customer service,
 - **Payment**
   - *Attributes:* Payment ID, Payment Date, Amount, Method, Status, etc.
   
-## Implementation Details
+## 4. Implementation Details
 
-1. Policy Management:
-
-Choice of Model Type:
+**Choice of Model Type:**
 
 For an auto insurance application with relational data and complex relationships between entities, a normalized relational model would be the most suitable choice. While NoSQL databases could be suitable for certain aspects of the application, such as storing unstructured data or handling high volumes of transactions, they might not be the best fit for the overall data model due to the structured nature of insurance data and the need for complex relationships and queries. However, depending on specific requirements, a hybrid approach combining relational and NoSQL databases could also be considered.
 
-### Relational Model:
+### 4.1. Policy Management:
 
-Tables:
-Policy Table (policy details)
-Policyholder Table (policyholder information)
-Coverage Table (coverage details)
-Relationships:
-Policyholder has a one-to-many relationship with Policy
-Policy has a many-to-many relationship with Coverage
-Functions:
-CRUD operations for policies and policyholders
-Query policies by policyholder
-Add or update coverage for a policy
-NoSQL (Optional):
+#### Relational Model:
 
-Scenario:
-Storing policy documents (PDFs, images) which may vary in structure.
-Implementation:
-Use a NoSQL document store (e.g., MongoDB) to store policy documents.
-Store metadata in the relational database and link to corresponding documents in the NoSQL database.
-2. Claims Processing:
-Relational Model:
+- **Tables:**
 
-Tables:
-Claim Table (claim details)
-Policy Table (foreign key to link claims with policies)
-Relationships:
-Policy has a one-to-many relationship with Claim
-Functions:
-Record new claims and update claim status
-Query claims by policy
-Calculate claim settlements
-NoSQL (Optional):
+  - Policy Table (policy details)
+  - Policyholder Table (policyholder information)
+  - Coverage Table (coverage details)
 
-Scenario:
-Storing unstructured data such as claim photos or scanned documents.
-Implementation:
-Use a NoSQL database to store unstructured data associated with claims, such as images or text documents.
-3. Customer Management:
-Relational Model:
+- **Relationships:**
 
-Tables:
-Policyholder Table (customer details)
-Functions:
-CRUD operations for policyholders
-Query policies by customer
-4. Premium Calculations:
-Relational Model:
+  - Policyholder has a one-to-many relationship with Policy
+  - Policy has a many-to-many relationship with Coverage
 
-Tables:
-Premium Table (premium payment details)
-Functions:
-Calculate premiums based on policy details and risk factors
-Record premium payments
-5. Renewal Reminders:
-Relational Model:
+- **Functions:**
 
-Tables:
-Communication Table (communication details)
-Functions:
-Schedule and send renewal reminders via email or SMS
-Log communication events
-NoSQL (Optional):
+  - CRUD operations for policies and policyholders
+  - Query policies by policyholder
+  - Add or update coverage for a policy
 
-Scenario:
-Storing communication history with customers, which may have variable structure.
-Implementation:
-Use a NoSQL database to store communication logs in a flexible schema.
-6. Agent Management:
-Relational Model:
+#### NoSQL:
 
-Tables:
-Agent Table (agent details)
-Functions:
-CRUD operations for agents
-Track agent performance metrics
+- **Scenario:**
+  - Storing policy documents (PDFs, images) which may vary in structure.
+	
+- ** Implementation:**
+  - Use a NoSQL document store (e.g., MongoDB) to store policy documents.
+  - Store metadata in the relational database and link to corresponding documents in the NoSQL database.
 
 
-## Table Details
+### 4.2. Claims Processing:
 
-### 1. Policyholder Table
+#### Relational Model:
+
+- **Tables:**
+
+  - Claim Table (claim details)
+  - Policy Table (foreign key to link claims with policies)
+
+- **Relationships:**
+
+  - Policy has a one-to-many relationship with Claim
+
+- **Functions:**
+
+  - Record new claims and update claim status
+  - Query claims by policy
+  - Calculate claim settlements
+  - NoSQL (Optional):
+
+
+#### NoSQL:
+
+- **Scenario:**
+  - Storing unstructured data such as claim photos or scanned documents.
+  
+- **Implementation:**
+  - Use a NoSQL database to store unstructured data associated with claims, such as images or text documents.
+
+### 4.3. Customer Management:
+
+#### Relational Model:
+
+- **Tables:**
+  - Policyholder Table (customer details)
+
+- **Functions:**
+  - CRUD operations for policyholders
+  - Query policies by customer
+
+
+### 4.4. Premium Calculations:
+
+#### Relational Model:
+
+- **Tables:**
+  - Premium Table (premium payment details)
+
+- **Functions:**
+  - Calculate premiums based on policy details and risk factors
+  - Record premium payments
+
+### 4.5. Renewal Reminders:
+
+#### Relational Model:
+
+- **Tables:**
+  - Communication Table (communication details)
+  
+- **Functions:**
+  - Schedule and send renewal reminders via email or SMS
+  - Log communication events
+
+#### NoSQL:
+
+- **Scenario:**
+  - Storing communication history with customers, which may have variable structure.
+
+- **Implementation:**
+  - Use a NoSQL database to store communication logs in a flexible schema.
+  
+### 4.6. Agent Management:
+
+#### Relational Model:
+
+- **Tables:**
+  - Agent Table (agent details)
+  
+- **Functions:**
+  - CRUD operations for agents
+  - Track agent performance metrics
+
+
+## 5. Table Details
+
+### 5.1. Policyholder Table
 
 **Description:** Table storing information about policyholders.
 
@@ -155,7 +189,7 @@ Track agent performance metrics
 | address       | VARCHAR   | Address of the policyholder.         |
 | contact_info  | VARCHAR   | Contact information of the policyholder. |
 
-### 2. Policy Table
+### 5.2. Policy Table
 
 **Description:** Table storing details of insurance policies.
 
@@ -168,7 +202,7 @@ Track agent performance metrics
 | premium_amount| DECIMAL   | Premium amount for the policy.       |
 | policyholder_id | INT     | Foreign key to link with Policyholder table. |
 
-### 3. Claim Table
+### 5.3. Claim Table
 
 **Description:** Table storing details of insurance claims.
 
@@ -181,7 +215,7 @@ Track agent performance metrics
 | settlement_amount | DECIMAL | Settlement amount for the claim.     |
 | policy_id     | INT       | Foreign key to link with Policy table. |
 
-### 4. Agent Table
+### 5.4. Agent Table
 
 **Description:** Table storing information about agents.
 
@@ -192,7 +226,7 @@ Track agent performance metrics
 | contact_info  | VARCHAR   | Contact information of the agent.    |
 | commission_rate | DECIMAL | Commission rate of the agent.        |
 
-### 5. Premium Table
+### 5.5. Premium Table
 
 **Description:** Table storing details of premium payments.
 
@@ -204,7 +238,7 @@ Track agent performance metrics
 | method        | VARCHAR   | Payment method (e.g., credit card, bank transfer). |
 | policy_id     | INT       | Foreign key to link with Policy table. |
 
-### 6. Document Table
+### 5.6. Document Table
 
 **Description:** Table storing documents associated with policies.
 
@@ -215,7 +249,7 @@ Track agent performance metrics
 | content       | TEXT      | Content of the document.             |
 | policy_id     | INT       | Foreign key to link with Policy table. |
 
-### 7. Communication Table
+### 5.7. Communication Table
 
 **Description:** Table storing communication logs.
 
@@ -226,3 +260,91 @@ Track agent performance metrics
 | type          | VARCHAR   | Type of communication (e.g., email, SMS). |
 | content       | TEXT      | Content of the communication.        |
 | policyholder_id | INT      | Foreign key to link with Policyholder table. |
+
+### 5.8. Policy_Documents Table
+
+**Description:** Table stores the actual policy documents, with each document represented as a JSON document containing the document name, type, size, binary data of the document, and creation timestamp.
+
+- Example JSON document structure:
+
+```
+// Example document structure
+{
+  "_id": ObjectId("..."),
+  "document_name": "Policy123.pdf",
+  "document_type": "PDF",
+  "document_size": 2048, // Size in kilobytes
+  "document_data": BinData(0, "<binary data>"), // Binary data of the document
+  "created_at": ISODate("2024-02-28T12:00:00Z")
+}
+```
+
+### 5.9. Claim_Documents Table
+
+**Description:** Table stores the unstructured data like claim photos or scanned documents.
+
+- Example JSON document structure:
+
+  ```
+  {
+  "collection": "claim_documents",
+  "document_structure": [
+    {
+      "_id": "<ObjectId>",
+      "claim_id": "<ObjectId or Claim Reference>",
+      "document_type": "Photo | PDF | Text",
+      "file_name": "example.jpg",
+      "content_type": "image/jpeg | application/pdf | text/plain",
+      "document_data": "<Binary Data>",
+      "description": "Photo of the damaged vehicle",
+      "uploaded_at": "<ISODate>",
+      "metadata": {
+        "uploader": "Claimant Name",
+        "claim_number": "123456789",
+        "tags": ["vehicle damage", "rear-end collision"]
+      }
+    }
+  ]
+  }
+
+  ```
+
+### 5.9. Communication_Logs Table
+
+**Description:** Table stores the communication history with customers, which can vary significantly in structure.
+
+- Example JSON document structure:
+
+  ```
+  {
+  "collection": "communication_logs",
+  "document_structure": [
+    {
+      "_id": "<ObjectId>",
+      "customer_id": "<ObjectId or Customer Reference>",
+      "communication_type": "Email | Phone Call | SMS | Chat",
+      "content": "Hello, your policy is about to expire.",
+      "timestamp": "<ISODate>",
+      "status": "Sent | Received | Failed",
+      "metadata": {
+        "agent_id": "<ObjectId or Agent Reference>",
+        "channel": "Website | Mobile App | Email | SMS",
+        "attachments": [
+          {
+            "file_name": "attachment.pdf",
+            "content_type": "application/pdf",
+            "url": "https://example.com/path/to/attachment.pdf"
+          }
+        ],
+        "read_receipt": "Read | Unread",
+        "delivery_status": "Delivered | Not Delivered",
+        "customer_feedback": "Satisfied | Neutral | Unsatisfied",
+        "tags": ["renewal", "customer_support", "feedback_request"]
+      }
+    }
+  ]
+  }
+  ```
+
+
+## 6. ER Diagram
