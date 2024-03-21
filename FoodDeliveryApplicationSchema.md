@@ -1,10 +1,8 @@
 <h1 align="center" style="color:blue;"> Food Delivery Application Data Model </h1>
 
-<a align="center" > ![_Food Delivery Application](https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/387c9538-8641-40cf-a171-1fffb5d169b9) </a>
-
-<div style="text-align: center;">
-	![_Food Delivery Application](https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/387c9538-8641-40cf-a171-1fffb5d169b9)
-</div>
+<p align="center">
+	<img src="https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/387c9538-8641-40cf-a171-1fffb5d169b9" alt="Food Delivery Application" >
+</p>
 
 ## 1. Use Case:
 
