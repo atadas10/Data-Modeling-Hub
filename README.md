@@ -1,4 +1,9 @@
-# Welcome to the Data Modeling Hub
+<h1 align="center" style="color:green;"> Welcome to the Data Modeling Hub </h1>
+
+<p align="center" style="color:blue;">
+  “Knowledge cannot be taken away from anyone except by obsolescence.”
+  ― Dr. A.P.J. Abdul Kalam
+</p>
 
 ## About
 
