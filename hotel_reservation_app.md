@@ -1,4 +1,8 @@
-# Hotel Reservation Application Data Model
+<h1 align="center" style="color:blue;"> Hotel Reservation Application Data Model </h1>
+
+<p align="center">
+	<img src="https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/4ba9b25c-fdd5-476b-b081-c1ad95a9a3f4" alt="Hotel-Reservation" >
+</p>
 
 ## 1. Use Case:
   The hotel reservation data model facilitates hotel management, reservation tracking, and customer information storage.
