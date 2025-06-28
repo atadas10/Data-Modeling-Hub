@@ -27,7 +27,7 @@ Star schemas are characterized by their simplicity and ease of understanding. Th
   
   <h4> 2.1.1. Conformed Dimension Tables </h4>
   
-  Conformed dimension tables are dimension tables that have the same meaning and content when referred to from different fact tables in the same data warehouse or across different data warehouses in the organization. They provide consistency in reporting and analysis across multiple business processes.
+  Conformed dimension tables are dimension tables that have the same meaning and content when referred to from different fact tables in the same data warehouse or across different data warehouses in the organisation. They provide consistency in reporting and analysis across multiple business processes.
   
   Example:
   Consider the dim_date dimension table containing attributes such as DateID, DayOfWeek, Month, Quarter, and Year. This dimension table can be conformed across multiple fact tables, such as Sales, Inventory, and Customer Satisfaction, ensuring consistent reporting of sales, inventory levels, and customer satisfaction metrics over time.
@@ -75,17 +75,23 @@ Fact tables contain quantitative data, also known as measures, and are typically
   
   <h4> 2.1.2. Periodic Snapshot Fact Tables </h4>
   
-  Periodic snapshot fact tables capture data at regular intervals or snapshots, providing a snapshot of a particular point in time. They are useful for tracking changes over time and analyzing trends.
+  Periodic snapshot fact tables capture data at regular intervals or snapshots, providing a snapshot of a particular point in time. They are useful for tracking changes over time and analysing trends.
   
   Example:
   A "Inventory Snapshot" fact table
   
   <h4> 2.1.3. Accumulating Snapshot Fact Tables </h4>
   
-  Accumulating snapshot fact tables track the state or progression of a process or workflow over time, capturing key milestones or events. They provide a comprehensive view of the entire process lifecycle and are often used for performance monitoring and optimization.
+  Accumulating snapshot fact tables track the state or progression of a process or workflow over time, capturing key milestones or events. They provide a comprehensive view of the entire process lifecycle and are often used for performance monitoring and optimisation.
   
   Example:
   A "Project Progress" fact table in a project management system may contain records representing the key milestones achieved during the lifecycle of each project, including information such as ProjectID, MilestoneID, MilestoneName, MilestoneDate, and MilestoneStatus.
+
+  <h4> 2.1.4. Slowly Changing Fact Tables  </h4>
+
+  [**Slowly Changing Fact (SCF)**](scf.md) tables are designed to handle changes in attributes that evolve slowly over time but are still relevant to historical analysis. Unlike regular fact tables that store time-stamped transactional data, SCF tables maintain historical context by preserving prior versions of facts or by tracking the effect of slowly changing dimensions on fact metrics. This approach is particularly useful when the business needs visibility into how measures or related attributes have changed over time.
+  
+  Example: An “Online Order Status History” fact table in an e-commerce system may store a new row every time the order progresses through a new status. The table may include OrderID, Status (e.g., Placed, Packed, Dispatched, Delivered, Cancelled), StatusChangeDate, EstimatedDeliveryDate, WarehouseID, and CustomerRegion. Each time the order status changes, a new row is added with the latest status and timestamp, allowing analysts to track how the order evolved over time and investigate delays or cancellations with full historical context.
 
 # 3. Advantages of Star Schema Modeling
 
