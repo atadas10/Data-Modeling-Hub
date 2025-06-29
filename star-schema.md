@@ -93,6 +93,9 @@ Fact tables contain quantitative data, also known as measures, and are typically
   
   Example: An “Online Order Status History” fact table in an e-commerce system may store a new row every time the order progresses through a new status. The table may include OrderID, Status (e.g., Placed, Packed, Dispatched, Delivered, Cancelled), StatusChangeDate, EstimatedDeliveryDate, WarehouseID, and CustomerRegion. Each time the order status changes, a new row is added with the latest status and timestamp, allowing analysts to track how the order evolved over time and investigate delays or cancellations with full historical context.
 
+> Note: The term **"Slowly Changing Fact (SCF)"** is not formally defined in traditional Data Warehouse literature by Kimball or Inmon. It is likely a custom or context-specific concept, rather than part of the standard fact table types — which typically include **Transactional**, **Periodic Snapshot**, and **Accumulating Snapshot** fact tables.
+  
+
 # 3. Advantages of Star Schema Modeling
 
 ## 3.1. Simplicity and Understandability
