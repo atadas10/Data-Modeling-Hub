@@ -1,4 +1,8 @@
-# Food Delivery Application Data Model
+<h1 align="center" style="color:blue;"> Food Delivery Application Data Model </h1>
+
+<p align="center">
+	<img src="https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/387c9538-8641-40cf-a171-1fffb5d169b9" alt="Food Delivery Application" >
+</p>
 
 ## 1. Use Case:
 
