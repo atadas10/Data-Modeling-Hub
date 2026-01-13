@@ -1,7 +1,7 @@
 <h1 align="center" style="color:blue;"> Consumer Banking Data Model </h1>
 
 <p align="center">
-  <img src="https://github.com/atadas10/Data-Modeling-Hub/assets/84840069/7fc2f7f7-xxxx-xxxx-xxxx-xxxxxxxxxxxx" alt="Consumer Banking" >
+  <img src="https://github.com/atadas10/Data-Modeling-Hub/assets/consumer-banking-homepage.png" alt="Consumer Banking" >
 </p>
 
 ## 1. Use case and Functional Requirements
@@ -321,12 +321,10 @@ Notes:
 
 ## 3. Schema diagram
 
-```markdown
 <figure>
   <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
   <figcaption>Entity-Relationship Diagram for Consumer Banking Star Schema</figcaption>
 </figure>
-```
 
 ![Schema Diagram Placeholder](#)
 
@@ -390,7 +388,7 @@ This section maps each functional requirement (FR) to the tables and describes t
 
 ### 4.7 Cross-cutting implementation notes
 
-- Point-in-time joins: when reporting as-of a date, join `fact_transaction.transaction_ts` (or other event timestamp) to SCD-II dims by requiring `event_ts between effective_from and effective_to` (or `effective_to IS NULL` for current).
+- Point-in-time joins: when reporting as of a date, join `fact_transaction.transaction_ts` (or other event timestamp) to SCD-II dims by requiring `event_ts between effective_from and effective_to` (or `effective_to IS NULL` for current).
 - Idempotency: use deterministic keys and `etl_batch_id` to make inserts idempotent; use upsert logic for lifecycle and SCD-II insertion.
 - Partitioning & retention: partition facts by date for pruning; archive older partitions but preserve monthly aggregates as needed for reporting.
 - Monitoring & reconciliation: run scheduled reconciliation jobs that compare source counts/amounts to `fact_transaction` aggregates and surface mismatches.
