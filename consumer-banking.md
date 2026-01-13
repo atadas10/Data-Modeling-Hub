@@ -43,7 +43,6 @@ Based on the consumer banking data model, here's the conceptual schema structure
 
 <figure>
   <img src="assets/consumer-banking-conceptual-model.svg" alt="Consumer Banking Conceptual Model" />
-  <figcaption>Conceptual Model for Consumer Banking Star Schema</figcaption>
 </figure>
 
 ### 2.2 Table Details
@@ -268,9 +267,8 @@ Notes:
 
 ## 3. Schema diagram
 
-<figure>
-  <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
-  <figcaption>Entity-Relationship Diagram for Consumer Banking Star Schema</figcaption>
+<figure align="center">
+    <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
 </figure>
 
 ![Schema Diagram Placeholder](#)
