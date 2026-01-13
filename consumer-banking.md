@@ -271,8 +271,6 @@ Notes:
     <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
 </figure>
 
-![Schema Diagram Placeholder](#)
-
 ## 4. Implementation details — FR → tables
 
 This section maps each functional requirement (FR) to the tables and describes the concrete implementation patterns used to meet the requirement.
