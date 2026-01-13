@@ -39,65 +39,12 @@ All dimensions use surrogate keys (`*_sk`) and retain source natural keys (`*_id
 
 **Schema Structure:**
 
-Based on the consumer banking data model, here's the schema structure:
+Based on the consumer banking data model, here's the conceptual schema structure:
 
-```
-                ┌─────────────────────┐
-                │   dim_customer      │
-                │     (SCD-II)        │
-                ├─────────────────────┤
-                │ customer_sk (pk)    │
-                │ customer_id (nk)    │
-                └─────────────────────┘
-                       │
-    ┌──────────────────┼──────────────────────────────┐
-    │                  │                              │
-┌─────────────────┐    ┌──────────────────┐    ┌────────────────────────┐
-│  dim_account    │    │ fact_transaction │    │fact_transaction_lifecycle
-│   (SCD-II)      │    │ (Transactional)  │    │  (Accumulating)        │
-├─────────────────┤    ├──────────────────┤    ├────────────────────────┤
-│ account_sk (pk) │    │ transaction_id   │    │ lifecycle_id (pk)      │
-│ account_id      │    │ (pk)             │    │ transaction_id         │
-│ customer_sk     │    │ account_sk       │    │ account_sk             │
-│ status          │    │ merchant_sk      │    │ initiated_ts           │
-└─────────────────┘    │ channel_sk       │    │ authorized_ts          │
-    │                  │ card_sk          │    │ posted_ts              │
-    │                  │ amount           │    │ settled_ts             │
-    │                  │ transaction_ts   │    │ dispute_ts             │
-    │                  │ posting_ts       │    │ resolved_ts            │
-    │                  └──────────────────┘    └────────────────────────┘
-    │
-    └──────────────────┬────────────────────┐
-                       │                    │
-                ┌──────────────────┐  ┌──────────────────┐
-                │  dim_merchant    │  │  dim_channel     │
-                │    (SCD-I)       │  │    (SCD-I)       │
-                ├──────────────────┤  ├──────────────────┤
-                │ merchant_sk (pk) │  │ channel_sk (pk)  │
-                │ merchant_id      │  │ channel_id       │
-                │ merchant_name    │  │ channel_name     │
-                └──────────────────┘  └──────────────────┘
-                       │
-                ┌──────────────────┐
-                │   dim_card       │
-                │    (SCD-I)       │
-                ├──────────────────┤
-                │ card_sk (pk)     │
-                │ card_id          │
-                │ card_brand       │
-                └──────────────────┘
-
-  ┌──────────────────────────────────────────┐
-  │ fact_monthly_account_activity            │
-  │     (Monthly Snapshot)                   │
-  ├──────────────────────────────────────────┤
-  │ account_sk (pk)                          │
-  │ year_month (pk)                          │
-  │ transaction_count                        │
-  │ total_debit_amount                       │
-  │ total_credit_amount                      │
-  └──────────────────────────────────────────┘
-```
+<figure>
+  <img src="assets/consumer-banking-conceptual-model.svg" alt="Consumer Banking Conceptual Model" />
+  <figcaption>Conceptual Model for Consumer Banking Star Schema</figcaption>
+</figure>
 
 ### 2.2 Table Details
 
