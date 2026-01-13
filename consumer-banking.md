@@ -1,7 +1,7 @@
 <h1 align="center" style="color:blue;"> Consumer Banking Data Model </h1>
 
 <p align="center">
-  <img src="https://github.com/atadas10/Data-Modeling-Hub/assets/consumer-banking-homepage.png" alt="Consumer Banking" >
+  <img src="assets/consumer-banking-homepage.png" alt="Consumer Banking" width="750">
 </p>
 
 ## 1. Use case and Functional Requirements
