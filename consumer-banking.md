@@ -6,7 +6,7 @@
 
 ## 1. Use case and Functional Requirements
 
-Use case: support retail banking operations and analytics — account onboarding, KYC, transaction ledger, posting & settlement, disputes, monthly statements, fraud detection, and regulatory reporting.
+**Use case:** support retail banking operations and analytics — account onboarding, KYC, transaction ledger, posting & settlement, disputes, monthly statements, fraud detection, and regulatory reporting.
 
 Functional requirements (FR):
 
@@ -101,7 +101,7 @@ Based on the consumer banking data model, here's the schema structure:
 
 ### 2.2 Table Details
 
-Below we list table-level details starting with `dim_customer`.
+Below are the list of tables with column details:
 
 #### 2.2.1 `dim_customer` (SCD-II)
 
