@@ -14,13 +14,19 @@ Welcome to the Sample Data Models repository! Below are links to sample data mod
   - The hotel reservation data model facilitates hotel management, reservation tracking, and customer information storage.
   - [Link to Implementation Details](hotel_reservation_app.md#implementation-details)
 
-## 3. Insurance Policy Center
+## 3. Consumer Banking
+
+- **Functionality Overview:**
+  - This data model supports retail banking operations: account onboarding & KYC, transaction ledger, posting & settlement, dispute lifecycle, monthly statements, fraud detection, and regulatory reporting.
+  - [Link to Implementation Details](consumer-banking.md)
+
+## 4. Insurance Policy Center
 
 - **Functionality Overview:**
   - This model is tailored for an insurance policy center, managing policies, customer details, and premium calculations.
   - [Link to Implementation Details](insurance_policy_center.md#implementation-details)
 
-## 4. Health Insurance
+## 5. Health Insurance
 
 - **Functionality Overview:**
   - Designed for health insurance applications, this model includes features for policy management, claims processing, and member information tracking.

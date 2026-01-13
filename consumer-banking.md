@@ -321,7 +321,12 @@ Notes:
 
 ## 3. Schema diagram
 
-<!-- ER diagram placeholder — user will add diagram here -->
+```markdown
+<figure>
+  <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
+  <figcaption>Entity-Relationship Diagram for Consumer Banking Star Schema</figcaption>
+</figure>
+```
 
 ![Schema Diagram Placeholder](#)
 
