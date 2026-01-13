@@ -1,12 +1,12 @@
 <h1 align="center" style="color:blue;"> Consumer Banking Data Model </h1>
 
 <p align="center">
-  <img src="https://github.com/atadas10/Data-Modeling-Hub/assets/consumer-banking-homepage.png" alt="Consumer Banking" >
+  <img src="assets/consumer-banking-homepage.png" alt="Consumer Banking" width="750">
 </p>
 
 ## 1. Use case and Functional Requirements
 
-Use case: support retail banking operations and analytics — account onboarding, KYC, transaction ledger, posting & settlement, disputes, monthly statements, fraud detection, and regulatory reporting.
+**Use case:** support retail banking operations and analytics — account onboarding, KYC, transaction ledger, posting & settlement, disputes, monthly statements, fraud detection, and regulatory reporting.
 
 Functional requirements (FR):
 
@@ -39,69 +39,15 @@ All dimensions use surrogate keys (`*_sk`) and retain source natural keys (`*_id
 
 **Schema Structure:**
 
-Based on the consumer banking data model, here's the schema structure:
+Based on the consumer banking data model, here's the conceptual schema structure:
 
-```
-                ┌─────────────────────┐
-                │   dim_customer      │
-                │     (SCD-II)        │
-                ├─────────────────────┤
-                │ customer_sk (pk)    │
-                │ customer_id (nk)    │
-                └─────────────────────┘
-                       │
-    ┌──────────────────┼──────────────────────────────┐
-    │                  │                              │
-┌─────────────────┐    ┌──────────────────┐    ┌────────────────────────┐
-│  dim_account    │    │ fact_transaction │    │fact_transaction_lifecycle
-│   (SCD-II)      │    │ (Transactional)  │    │  (Accumulating)        │
-├─────────────────┤    ├──────────────────┤    ├────────────────────────┤
-│ account_sk (pk) │    │ transaction_id   │    │ lifecycle_id (pk)      │
-│ account_id      │    │ (pk)             │    │ transaction_id         │
-│ customer_sk     │    │ account_sk       │    │ account_sk             │
-│ status          │    │ merchant_sk      │    │ initiated_ts           │
-└─────────────────┘    │ channel_sk       │    │ authorized_ts          │
-    │                  │ card_sk          │    │ posted_ts              │
-    │                  │ amount           │    │ settled_ts             │
-    │                  │ transaction_ts   │    │ dispute_ts             │
-    │                  │ posting_ts       │    │ resolved_ts            │
-    │                  └──────────────────┘    └────────────────────────┘
-    │
-    └──────────────────┬────────────────────┐
-                       │                    │
-                ┌──────────────────┐  ┌──────────────────┐
-                │  dim_merchant    │  │  dim_channel     │
-                │    (SCD-I)       │  │    (SCD-I)       │
-                ├──────────────────┤  ├──────────────────┤
-                │ merchant_sk (pk) │  │ channel_sk (pk)  │
-                │ merchant_id      │  │ channel_id       │
-                │ merchant_name    │  │ channel_name     │
-                └──────────────────┘  └──────────────────┘
-                       │
-                ┌──────────────────┐
-                │   dim_card       │
-                │    (SCD-I)       │
-                ├──────────────────┤
-                │ card_sk (pk)     │
-                │ card_id          │
-                │ card_brand       │
-                └──────────────────┘
-
-  ┌──────────────────────────────────────────┐
-  │ fact_monthly_account_activity            │
-  │     (Monthly Snapshot)                   │
-  ├──────────────────────────────────────────┤
-  │ account_sk (pk)                          │
-  │ year_month (pk)                          │
-  │ transaction_count                        │
-  │ total_debit_amount                       │
-  │ total_credit_amount                      │
-  └──────────────────────────────────────────┘
-```
+<figure>
+  <img src="assets/consumer-banking-conceptual-model.svg" alt="Consumer Banking Conceptual Model" />
+</figure>
 
 ### 2.2 Table Details
 
-Below we list table-level details starting with `dim_customer`.
+Below are the list of tables with column details:
 
 #### 2.2.1 `dim_customer` (SCD-II)
 
@@ -321,12 +267,9 @@ Notes:
 
 ## 3. Schema diagram
 
-<figure>
-  <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
-  <figcaption>Entity-Relationship Diagram for Consumer Banking Star Schema</figcaption>
+<figure align="center">
+    <img src="assets/Consumer_Banking_Model.svg" alt="Consumer Banking Data Model ER Diagram" />
 </figure>
-
-![Schema Diagram Placeholder](#)
 
 ## 4. Implementation details — FR → tables
 
